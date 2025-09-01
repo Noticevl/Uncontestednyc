@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://uncontestednyc.com/</loc></url>
-  <url><loc>https://uncontestednyc.com/terms.html</loc></url>
-  <url><loc>https://uncontestednyc.com/privacy.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/</loc></url>
+  <url><loc>https://www.uncontestednyc.com/intake.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/</loc></url>
+  <url><loc>https://www.uncontestednyc.com/tools/eligibility-quiz.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/tools/cost-estimator.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/tools/checklist.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/tools/case-tracker.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/boroughs/</loc></url>
+  <url><loc>https://www.uncontestednyc.com/terms.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/privacy.html</loc></url>
 </urlset>

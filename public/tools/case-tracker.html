@@ -1,5 +1,6 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy — NYC Uncontested Divorce Law</title><link rel="stylesheet" href="/assets/styles.css"></head>
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Case Tracker — NYC Uncontested Divorce Law</title><link rel="stylesheet" href="/assets/styles.css"></head>
 <body>
   <div class="notice"><div class="container"><div><span class="badge">ATTORNEY ADVERTISING</span> Information is general and not legal advice.</div><div class="small">Serving all five boroughs • E‑Filing where available</div></div></div>
   <header><div class="container nav">
@@ -15,12 +16,16 @@
     </nav>
     <div><a class="btn btn-ghost" href="tel:+15133844407">Call (513) 384-4407</a> <a class="btn btn-primary" href="mailto:intake@uncontestednyc.com?subject=Uncontested%20Divorce%20Consult">Email</a></div>
   </div></header>
+
 <main class="section"><div class="container">
-<h2>Privacy Policy</h2>
-<div class="card">
-<p>We use the information you submit to respond and schedule. We do not sell your personal information. Do not submit confidential or time‑sensitive details until a written retainer is signed. Email may be insecure; call if you prefer.</p>
-</div>
+  <h2>Live Case Tracker (demo)</h2>
+  <p class="small">For demonstration only. We’ll provide a client‑specific link after engagement.</p>
+  <div class="card">
+    <p><label>Case ID: <input id="cid" value="DEMO-123"></label> <button class="btn" onclick="load()">Load</button></p>
+    <div id="timeline"></div>
+  </div>
 </div></main>
+
   <footer><div class="container">
     <div class="grid-3">
       <div><strong>NYC Uncontested Divorce Law</strong><br>A trade name of <em>NYC Uncontested Divorce Law, PLLC</em>.<br>Responsible attorney: Vishal Noticewala, Esq..<br><span class="small">Principal law office address: 275 S 5th St, Brooklyn, NY 11211 (by appointment)</span></div>
@@ -30,4 +35,22 @@
     <div class="footer-note">© 2025 NYC Uncontested Divorce Law, PLLC. ATTORNEY ADVERTISING. Prior results do not guarantee a similar outcome. Contacting us does not create an attorney‑client relationship.</div>
   </div></footer>
   <a id="sticky-call" href="tel:+15133844407">Call (513) 384-4407</a>
+
+<script>
+function load(){
+  const stages = [
+    ["Engaged","Complete"],
+    ["Drafting","In progress"],
+    ["Filed","Complete"],
+    ["Service","Complete"],
+    ["Judicial review","Pending"],
+    ["Judgment","Not yet"]
+  ];
+  let html = "<table class='table'><tr><th>Stage</th><th>Status</th></tr>";
+  stages.forEach(s=> html += `<tr><td>${s[0]}</td><td>${s[1]}</td></tr>`);
+  html += "</table><p class='small'>Court timelines vary by county and docket.</p>";
+  document.getElementById('timeline').innerHTML = html;
+}
+load();
+</script>
 </body></html>

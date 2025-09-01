@@ -1,5 +1,6 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy — NYC Uncontested Divorce Law</title><link rel="stylesheet" href="/assets/styles.css"></head>
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Total Cost Estimator — NYC Uncontested Divorce Law</title><link rel="stylesheet" href="/assets/styles.css"></head>
 <body>
   <div class="notice"><div class="container"><div><span class="badge">ATTORNEY ADVERTISING</span> Information is general and not legal advice.</div><div class="small">Serving all five boroughs • E‑Filing where available</div></div></div>
   <header><div class="container nav">
@@ -15,12 +16,19 @@
     </nav>
     <div><a class="btn btn-ghost" href="tel:+15133844407">Call (513) 384-4407</a> <a class="btn btn-primary" href="mailto:intake@uncontestednyc.com?subject=Uncontested%20Divorce%20Consult">Email</a></div>
   </div></header>
+
 <main class="section"><div class="container">
-<h2>Privacy Policy</h2>
-<div class="card">
-<p>We use the information you submit to respond and schedule. We do not sell your personal information. Do not submit confidential or time‑sensitive details until a written retainer is signed. Email may be insecure; call if you prefer.</p>
-</div>
+  <h2>Total Cost Estimator</h2>
+  <p class="small">Your flat fee is $5,000 (includes standard filing fees + routine NYC service). Use this to estimate uncommon extras.</p>
+  <div class="card">
+    <label><input type="checkbox" id="pub"> Publication / alternate service (rare) — est. $300–$800</label><br>
+    <label><input type="checkbox" id="intl"> International service (rare) — est. $300–$1000</label><br>
+    <label><input type="number" id="copies" min="0" value="0"> Additional certified copies @ $10 each (typical)</label><br><br>
+    <button class="btn btn-primary" onclick="calc()">Calculate</button>
+    <div id="out" style="margin-top:10px"></div>
+  </div>
 </div></main>
+
   <footer><div class="container">
     <div class="grid-3">
       <div><strong>NYC Uncontested Divorce Law</strong><br>A trade name of <em>NYC Uncontested Divorce Law, PLLC</em>.<br>Responsible attorney: Vishal Noticewala, Esq..<br><span class="small">Principal law office address: 275 S 5th St, Brooklyn, NY 11211 (by appointment)</span></div>
@@ -30,4 +38,15 @@
     <div class="footer-note">© 2025 NYC Uncontested Divorce Law, PLLC. ATTORNEY ADVERTISING. Prior results do not guarantee a similar outcome. Contacting us does not create an attorney‑client relationship.</div>
   </div></footer>
   <a id="sticky-call" href="tel:+15133844407">Call (513) 384-4407</a>
+
+<script>
+function calc(){
+  let extras = 0;
+  let notes = [];
+  if(document.getElementById('pub').checked){extras += 500; notes.push("Publication/alternate service (estimate)");}
+  if(document.getElementById('intl').checked){extras += 600; notes.push("International service (estimate)");}
+  const copies = parseInt(document.getElementById('copies').value||"0"); extras += copies*10; if(copies>0) notes.push(`${copies} certified copies`);
+  document.getElementById('out').innerHTML = `<div class='banner'>Estimated extras: $${extras} (flat fee remains $5,000). ${notes.join(', ')||'No extras selected.'} </div>`;
+}
+</script>
 </body></html>
