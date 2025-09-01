@@ -3,52 +3,62 @@
 <title>Eligibility Quiz — NYC Uncontested Divorce Law</title><link rel="stylesheet" href="/assets/styles.css">
 </head><body>
 
-  <div class="notice"><div class="container"><div><span class="badge">ATTORNEY ADVERTISING</span> Information is general and not legal advice.</div><div class="small">Serving all five boroughs • E‑Filing where available</div></div></div>
-  <header><div class="container nav">
-    <div class="brand"><span class="dot"></span><a href="/">NYC Uncontested Divorce Law</a></div>
-    <nav aria-label="Primary">
-      <ul>
-        <li><a href="/#scope">All‑In Plan</a></li>
-        <li><a href="/#process">Process</a></li>
-        <li><a href="/#faq">FAQ</a></li>
-        <li><a href="/hub/">NYC Divorce Hub</a></li>
-        <li><a href="/intake.html">Get Started</a></li>
-      </ul>
-    </nav>
-    <div><a class="btn btn-ghost" href="tel:+15133844407">Call (513) 384-4407</a> <a class="btn btn-primary" href="mailto:intake@uncontestednyc.com?subject=Uncontested%20Divorce%20Consult">Email</a></div>
-  </div></header>
-
-<main class="section"><div class="container">
-  <h2>Quick Eligibility Quiz</h2>
-  <p class="small">This informal tool maps to NY's uncontested divorce requirements; it’s not legal advice.</p>
-  <div class="card">
-    <form id="quiz" onsubmit="event.preventDefault();">
-      <label>Do you and your spouse agree on all issues?<br>
-        <select id="agree"><option value="yes">Yes</option><option value="no">No</option></select>
-      </label><br><br>
-      <label>Residency — do you meet one of DRL §230 paths (e.g., lived in NY for 2 years, or 1 year with NY marriage or marital residence)?<br>
-        <select id="residency"><option value="yes">Yes / likely</option><option value="no">No / unsure</option></select>
-      </label><br><br>
-      <label>Children under 21?<br>
-        <select id="kids"><option value="no">No</option><option value="yes">Yes</option></select>
-      </label><br><br>
-      <label>Do you know the other spouse’s address for service?<br>
-        <select id="service"><option value="yes">Yes</option><option value="no">No</option></select>
-      </label><br><br>
-      <button class="btn btn-primary" onclick="run()">See result & checklist</button>
-    </form>
-  </div>
-  <div id="result" class="card" style="margin-top:14px;display:none"></div>
-</div></main>
-
-  <footer><div class="container">
-    <div class="grid-3">
-      <div><strong>NYC Uncontested Divorce Law</strong><br>A trade name of <em>NYC Uncontested Divorce Law, PLLC</em>.<br>Responsible attorney: Vishal Noticewala, Esq..<br><span class="small">Principal law office address: 275 S 5th St, Brooklyn, NY 11211 (by appointment)</span></div>
-      <div><strong>Contact</strong><br><a href="tel:+15133844407">(513) 384-4407</a><br><a href="mailto:intake@uncontestednyc.com">intake@uncontestednyc.com</a></div>
-      <div><strong>Links</strong><br><a href="/hub/">NYC Divorce Hub</a><br><a href="/terms.html">Terms</a> • <a href="/privacy.html">Privacy</a></div>
+  <div class="notice"><div class="container"><div><span class="badge-inline">ATTORNEY ADVERTISING</span> Info is general, not legal advice.</div><div class="subtitle">Serving all five boroughs • E‑Filing where available</div></div></div>
+  <header>
+    <div class="container nav">
+      <div class="brand"><span class="dot"></span><a href="/">NYC Uncontested Divorce Law</a></div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="/#benefits">Benefits</a></li>
+          <li><a href="/#stages">Fees</a></li>
+          <li><a href="/#faq">FAQ</a></li>
+          <li><a href="/hub/">NYC Divorce Hub</a></li>
+          <li><a href="/intake.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div><a class="btn btn-ghost" href="tel:+15133844407">Call (513) 384-4407</a> <a class="btn btn-primary" href="mailto:intake@uncontestednyc.com?subject=Uncontested%20Divorce%20Consult">Email</a></div>
     </div>
-    <div class="footer-note">© 2025 NYC Uncontested Divorce Law, PLLC. ATTORNEY ADVERTISING. Prior results do not guarantee a similar outcome. Contacting us does not create an attorney‑client relationship.</div>
-  </div></footer>
+  </header>
+
+<main class="section">
+  <div class="container">
+    <div class="hub-hero"><div class="bg"></div><div class="content">
+      <h2 class="title" style="margin:0">Eligibility Quiz</h2>
+      <p class="subtitle">This quick tool mirrors the uncontested basics. It’s not legal advice.</p>
+    </div></div>
+    <div style="height:10px"></div>
+    <div class="faq-group">
+      <form id="quiz" onsubmit="event.preventDefault();">
+        <label>Do you and your spouse agree on all issues?<br>
+          <select id="agree"><option value="yes">Yes</option><option value="no">No</option></select>
+        </label><br><br>
+        <label>Residency — do you meet a DRL §230 path (2 years in NY; or 1 year with NY tie)?<br>
+          <select id="residency"><option value="yes">Yes / likely</option><option value="no">No / unsure</option></select>
+        </label><br><br>
+        <label>Children under 21?<br>
+          <select id="kids"><option value="no">No</option><option value="yes">Yes</option></select>
+        </label><br><br>
+        <label>Do you know the other spouse’s address for service?<br>
+          <select id="service"><option value="yes">Yes</option><option value="no">No</option></select>
+        </label><br><br>
+        <button class="btn btn-primary" onclick="run()">See result & checklist</button>
+      </form>
+      <div id="result" style="margin-top:14px"></div>
+    </div>
+  </div>
+</main>
+
+  <footer>
+    <div class="container">
+      <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:18px">
+        <div><strong>NYC Uncontested Divorce Law</strong><br>A trade name of <em>NYC Uncontested Divorce Law, PLLC</em>.<br>Responsible attorney: Vishal Noticewala, Esq..<br><span class="subtitle">Principal law office address: 275 S 5th St, Brooklyn, NY 11211 (by appointment)</span></div>
+        <div><strong>Contact</strong><br><a href="tel:+15133844407">(513) 384-4407</a><br><a href="mailto:intake@uncontestednyc.com">intake@uncontestednyc.com</a></div>
+        <div><strong>Links</strong><br><a href="/hub/">Hub</a><br><a href="/terms.html">Terms</a> • <a href="/privacy.html">Privacy</a></div>
+      </div>
+      <div class="footer-note" style="margin-top:12px">© 2025 NYC Uncontested Divorce Law, PLLC. Prior results do not guarantee a similar outcome. Contacting us does not create an attorney‑client relationship.</div>
+      <div class="footer-note" style="margin-top:8px">Photo credits: Unsplash (non‑exclusive).</div>
+    </div>
+  </footer>
   <a id="sticky-call" href="tel:+15133844407">Call (513) 384-4407</a>
 
 <script>
@@ -57,17 +67,17 @@ function run(){
   const res = document.getElementById('residency').value==='yes';
   const kids = document.getElementById('kids').value==='yes';
   const svc = document.getElementById('service').value==='yes';
-  let text = "";
-  if(!agree) text += "<p><strong>It looks contested.</strong> Consider mediation or counsel for contested matters.</p>";
-  if(!res) text += "<p><strong>Residency unclear.</strong> Review DRL §230 or ask us to confirm.</p>";
+  let html = "";
+  if(!agree) html += "<p><strong>It looks contested.</strong> Consider mediation or counsel for contested matters.</p>";
+  if(!res) html += "<p><strong>Residency unclear.</strong> Review DRL §230 or ask us to confirm.</p>";
   if(agree && res) {
-    text += "<p><strong>Likely eligible for uncontested filing.</strong> We'll use the NYC uncontested packet; ";
-    text += (kids ? "with children under 21." : "without children under 21.");
-    text += " E-filing via NYSCEF may be available; otherwise EDDS or paper.</p>";
+    html += "<p><strong>Likely eligible for uncontested filing.</strong> We'll use the NYC uncontested packet ";
+    html += kids ? "(with children under 21)" : "(without children under 21)";
+    html += " and e‑file where allowed.</p>";
   }
-  if(!svc) text += "<p><strong>Service issue.</strong> If spouse cannot be located, alternate service (e.g., publication) may be required (not included in flat fee).</p>";
-  text += `<p><a class="btn" href="/tools/checklist.html?kids=${kids?'yes':'no'}">Download your checklist</a> <a class="btn" href="/intake.html">Start intake</a></p>`;
-  const div = document.getElementById('result'); div.innerHTML = text; div.style.display='block';
+  if(!svc) html += "<p><strong>Service issue.</strong> Alternate service (e.g., publication) may be needed (not included in the flat fee).</p>";
+  html += `<p><a class="btn" href="/tools/checklist.html?kids=${kids?'yes':'no'}">Download your checklist</a> <a class="btn btn-primary" href="/intake.html">Start intake</a></p>`;
+  document.getElementById('result').innerHTML = html;
 }
 </script>
 </body></html>
