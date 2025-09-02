@@ -6,7 +6,7 @@
     <div class="subtitle">Serving all five boroughs • E‑Filing where available</div>
   </div></div>
   <header><div class="container nav">
-    <div class="brand"><span class="dot"></span><a href="/">NYC Uncontested Divorce Law</a></div>
+    <div class="brand"><a href="/">NYC Uncontested Divorce Law</a></div>
     <nav aria-label="Primary"><ul>
       <li><a href="/#benefits">Benefits</a></li>
       <li><a href="/#stages">Fees</a></li>
@@ -18,7 +18,7 @@
   </div></header>
 
 <main class='section'><div class='container'>
-  <h2 class='title'>Eligibility Quiz (Residency & uncontested fit)</h2>
+  <h2 class='title'>Eligibility Quiz (Residency & Uncontested Fit)</h2>
   <div class='card'>
     <form id='quiz' onsubmit='checkFit(event)'>
       <p><strong>Residency:</strong> 2+ years in NY, or 1+ year with a NY tie?</p>
@@ -44,12 +44,11 @@ function checkFit(e){ e.preventDefault();
   if(res==='yes' && agree==='yes' && coop==='yes'){
     r.innerHTML = '<div class="card">Looks good for a <strong>truly uncontested</strong> filing in NYC. Next: <a href="/intake.html">book a fit call</a>.</div>';
   } else {
-    r.innerHTML = '<div class="card">This may require a custom strategy. We can still help asses options — <a href="/intake.html">request a consult</a>.</div>';
+    r.innerHTML = '<div class="card">May require a custom strategy. We can still help — <a href="/intake.html">request a consult</a>.</div>';
   }
 }
 </script>
 
-  <div class="skyline"><img src="/assets/nyc-skyline.svg" alt="NYC skyline decorative"></div>
   <footer><div class="container">
     <div class="footer-grid">
       <div><strong style="color:#fff">NYC Uncontested Divorce Law</strong><br>
