@@ -1,67 +1,47 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Quick intake · NYC Uncontested Divorce Law</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/styles.css">
-<script defer src="/assets/js/main.js"></script>
-</head>
-<body>
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="/"><span>NYC</span><span>Uncontested</span><span>Divorce Law</span></a>
-    <nav>
-      <a href="/" >Home</a>
-      <a href="/fees.html" >Fees</a>
-      <a href="/hub.html" >NYC Divorce Hub</a>
-      <a href="/faq.html" >FAQ</a>
-      <a href="/contact.html" >Contact</a>
-      <a href="/intake.html" class="cta">Start Your Intake</a>
-    </nav>
-  </div>
-</header>
-<main class="content">
-<section class="section"><div class="wrap">
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NYC Uncontested Divorce Law</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+<script defer src="assets/js/app.js"></script>
+</head><body>
+<header class="header"><div class="container bar">
+  <div class="brand"><span>NYC</span><span>Uncontested</span><span>Divorce Law</span></div>
+  <nav>
+    <a href="index.html" >Home</a>
+    <a href="fees.html" >Fees</a>
+    <a href="hub/index.html" >NYC Divorce Hub</a>
+    <a href="faq.html" >FAQ</a>
+    <a href="contact.html" style="font-weight:800">Contact</a>
+    <a class="btn cta" href="intake.html">Get Divorced — Start Intake</a>
+  </nav>
+</div></header>
+<div class="container">
+
+<section class="section hero-bg">
   <h1 class="h1">Quick intake</h1>
+  <p class="small">Use this short form. You’ll receive a reply with next steps and available times for a call. Prefer email? Write <a href="mailto:intake@uncontestednyc.com">intake@uncontestednyc.com</a>.</p>
   <div class="card">
-    <form id="intake" method="POST" action="https://formspree.io/f/your-id">
-      <div class="two-col">
-        <label>Full name<br><input name="name" required style="width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:10px"></label>
-        <label>Email<br><input type="email" name="email" required style="width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:10px"></label>
+    <form method="POST" action="mailto:intake@uncontestednyc.com" enctype="text/plain">
+      <div class="grid2">
+        <label>Full name<br><input name="name" required style="width:100%;padding:12px;border:1px solid #d7dcea;border-radius:12px"></label>
+        <label>Email<br><input type="email" name="email" required style="width:100%;padding:12px;border:1px solid #d7dcea;border-radius:12px"></label>
       </div>
-      <label style="display:block;margin-top:12px">Briefly describe your situation<br>
-        <textarea name="message" rows="5" style="width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:10px"></textarea>
-      </label>
-      <div class="actions">
-        <button class="btn primary" type="submit">Send</button>
-        <a class="btn" href="mailto:intake@uncontestednyc.com?subject=New%20Intake">Email instead</a>
+      <div style="margin:12px 0">
+        <label>Briefly describe your situation<br>
+          <textarea name="message" rows="4" style="width:100%;padding:12px;border:1px solid #d7dcea;border-radius:12px"></textarea>
+        </label>
       </div>
-      <p class="tiny">Do not include confidential information. Submitting this form does not create an attorney–client relationship.</p>
+      <button class="btn cta" type="submit">Send intake</button>
+      <a class="btn secondary" href="tel:15133844407">Call (513) 384‑4407</a>
     </form>
   </div>
-</div></section>
-<script>
-document.getElementById('intake').addEventListener('submit', async (e)=>{
-  e.preventDefault();
-  const form = e.target;
-  try{
-    const fd = new FormData(form);
-    const res = await fetch(form.action, {method:'POST', body:fd, headers:{'Accept':'application/json'}});
-    if(res.ok){ alert('Thanks—your intake was sent. We will reply shortly.'); form.reset(); }
-    else{ window.location.href = 'mailto:intake@uncontestednyc.com?subject=New%20Intake'; }
-  }catch(err){ window.location.href = 'mailto:intake@uncontestednyc.com?subject=New%20Intake'; }
-});
-</script>
-</main>
-<footer class="site-footer">
-  <div class="wrap">
-    <p><strong>New York City Divorce Attorney</strong> | serving Manhattan, Brooklyn, Staten Island, and Queens.</p>
-    <p class="tiny">ATTORNEY ADVERTISING • Please do not include any confidential or sensitive information in a contact form, text message, or voicemail. The contact form sends information by non-encrypted email, which is not secure. Submitting a contact form, sending a text message, making a phone call, or leaving a voicemail does not create an attorney–client relationship.</p>
-    <p class="tiny">© 2025 NYC Uncontested Divorce Law, PLLC.</p>
-  </div>
-</footer>
-</body>
-</html>
+</section>
+
+</div>
+<footer class="footer"><div class="container">
+  <div><strong>New York City Divorce Attorney</strong> | serving Manhattan, Brooklyn, Staten Island, and Queens.</div>
+  <p style="margin:8px 0 0; font-size:13px; line-height:1.5">
+  <strong>ATTORNEY ADVERTISING</strong> • Please do not include any confidential or sensitive information in a contact form, text message, or voicemail. The contact form sends information by non‑encrypted email, which is not secure. Submitting a contact form, sending a text message, making a phone call, or leaving a voicemail does not create an attorney‑client relationship.
+  </p>
+  <p style="margin:8px 0 0; font-size:12px">© 2025 NYC Uncontested Divorce Law, PLLC.</p>
+</div></footer></body></html>
