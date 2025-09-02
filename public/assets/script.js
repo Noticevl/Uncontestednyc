@@ -1,7 +1,1 @@
-
-document.querySelectorAll('img[data-fallback]').forEach(img=>{
-  img.addEventListener('error', ()=>{
-    const wrap = img.closest('.media-mask') || img.parentElement;
-    if(wrap){ wrap.classList.add('fallback'); img.remove(); }
-  });
-});
+document.querySelectorAll('[data-remote]').forEach(i=>i.addEventListener('error',()=>{i.src=i.getAttribute('data-remote')} ,{once:true}));
