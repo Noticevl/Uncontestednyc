@@ -1,54 +1,64 @@
 <!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Case Tracker — NYC Uncontested Divorce Law</title><link rel="stylesheet" href="/assets/styles.css"></head>
-<body>
-  <div class="notice"><div class="container"><div><span class="badge-inline">ATTORNEY ADVERTISING</span> Info is general, not legal advice.</div><div class="subtitle">Serving all five boroughs • E‑Filing where available</div></div></div>
-  <header>
-    <div class="container nav">
-      <div class="brand"><span class="dot"></span><a href="/">NYC Uncontested Divorce Law</a></div>
-      <nav aria-label="Primary">
-        <ul>
-          <li><a href="/#benefits">Benefits</a></li>
-          <li><a href="/#stages">Fees</a></li>
-          <li><a href="/#faq">FAQ</a></li>
-          <li><a href="/hub/">NYC Divorce Hub</a></li>
-          <li><a href="/intake.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div><a class="btn btn-ghost" href="tel:+15133844407">Call (513) 384-4407</a> <a class="btn btn-primary" href="mailto:intake@uncontestednyc.com?subject=Uncontested%20Divorce%20Consult">Email</a></div>
-    </div>
-  </header>
-
-<main class="section"><div class="container">
-  <div class="hub-hero"><div class="bg"></div><div class="content">
-    <h2 class="title" style="margin:0">Live Case Tracker (demo)</h2>
-    <p class="subtitle">Client‑specific link provided after engagement.</p>
-  </div></div>
-  <div style="height:10px"></div>
-  <div class="faq-group">
-    <p><label>Case ID: <input id="cid" value="DEMO-123" style="padding:8px;border-radius:12px;border:1px solid var(--line)"></label> <button class="btn" onclick="load()">Load</button></p>
-    <div id="timeline"></div>
-  </div>
-</div></main>
-
-  <footer>
-    <div class="container">
-      <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:18px">
-        <div><strong>NYC Uncontested Divorce Law</strong><br>A trade name of <em>NYC Uncontested Divorce Law, PLLC</em>.<br>Responsible attorney: Vishal Noticewala, Esq..<br><span class="subtitle">Principal law office address: 275 S 5th St, Brooklyn, NY 11211 (by appointment)</span></div>
-        <div><strong>Contact</strong><br><a href="tel:+15133844407">(513) 384-4407</a><br><a href="mailto:intake@uncontestednyc.com">intake@uncontestednyc.com</a></div>
-        <div><strong>Links</strong><br><a href="/hub/">Hub</a><br><a href="/terms.html">Terms</a> • <a href="/privacy.html">Privacy</a></div>
-      </div>
-      <div class="footer-note" style="margin-top:12px">© 2025 NYC Uncontested Divorce Law, PLLC. Prior results do not guarantee a similar outcome. Contacting us does not create an attorney‑client relationship.</div>
-      <div class="footer-note" style="margin-top:8px">Photo credits: Unsplash (non‑exclusive).</div>
-    </div>
-  </footer>
-  <a id="sticky-call" href="tel:+15133844407">Call (513) 384-4407</a>
-
-<script>
-function load(){
-  const stages=[["Engaged","Complete"],["Drafting","In progress"],["Filed","Complete"],["Service","Complete"],["Judicial review","Pending"],["Judgment","Not yet"]];
-  let html="<div class='checklist'>"; stages.forEach(s=> html+= "<div class='check'><strong>"+s[0]+"</strong> — "+s[1]+"</div>"); html+="</div>";
-  document.getElementById('timeline').innerHTML=html;
-} load();
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NYC Uncontested Divorce Law — Uncontested divorce in NYC, all‑in flat fee</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css"/>
+<script defer src="assets/script.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "NYC Uncontested Divorce Law",
+  "url": "https://www.uncontestednyc.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "275 S 5th St, Brooklyn, NY 11211 (by appointment)",
+    "addressLocality": "Brooklyn",
+    "addressRegion": "NY",
+    "postalCode": "11211",
+    "addressCountry": "US"
+  },
+  "telephone": "+15133844407",
+  "areaServed": "New York City",
+  "priceRange": "$$$"
+}
 </script>
+</head><body>
+<header class="site-header glass">
+  <div class="container row between center">
+    <a class="brand" href="index.html">NYC Uncontested Divorce Law</a>
+    <nav class="main-nav">
+      <a href="index.html#benefits">Benefits</a>
+      <a href="fees.html">Fees</a>
+      <a href="hub/index.html">NYC Divorce Hub</a>
+      <a href="faq.html">FAQ</a>
+      <a class="chip primary" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section"><div class="container">
+  <h1>Case Tracker</h1>
+  <p class="lead">Milestone checklist you can save for your records.</p>
+  <div class="card small dim">Prototype placeholder. Connect to your preferred form or app later.</div>
+</div></section>
+
+<footer class="site-footer">
+  <div class="container grid two">
+    <div>
+      <strong>NYC Uncontested Divorce Law</strong><br/>
+      A trade name of NYC Uncontested Divorce Law. Responsible attorney: Vishal Noticewala, Esq..<br/>
+      Principal law office address: 275 S 5th St, Brooklyn, NY 11211 (by appointment)<br/>
+      Phone: <a href="tel:+15133844407">(513) 384-4407</a> • Email: <a href="mailto:intake@uncontestednyc.com">intake@uncontestednyc.com</a>
+    </div>
+    <div class="small">
+      New York City Divorce Attorney | serving Manhattan, Brooklyn, Staten Island, and Queens.<br/>
+      <strong>ATTORNEY ADVERTISING</strong> — Information is general, not legal advice. No attorney–client relationship is formed by viewing this site or contacting us until an engagement letter is signed. Please do not include confidential information in the contact form, text message, or voicemail. The contact form sends information by non‑encrypted email.
+    </div>
+  </div>
+  <div class="container small dim">© NYC Uncontested Divorce Law Esq. 2025. All rights reserved.</div>
+</footer>
 </body></html>
