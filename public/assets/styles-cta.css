@@ -1,0 +1,37 @@
+/* === CTA + non-clickable pills fix === */
+.cta-primary{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:.65rem 1rem;border-radius:9999px;
+  background:#0b1736;color:#fff;font-weight:700;text-decoration:none;
+  box-shadow:0 1px 2px rgba(0,0,0,.15);
+}
+.cta-primary:hover{opacity:.9}
+.cta-secondary{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:.6rem 1rem;border-radius:9999px;border:1px solid rgba(0,0,0,.12);
+  background:#fff;color:#0b1736;font-weight:600;text-decoration:none;
+}
+.badge, .pill{
+  display:inline-block;padding:.45rem .8rem;border-radius:9999px;
+  background:rgba(11,23,54,.06);color:#0b1736;font-weight:700;
+}
+/* Make the badges clearly non-interactive */
+.badge[aria-disabled="true"], .pill[aria-disabled="true"]{
+  pointer-events:none;cursor:default;
+}
+/* Basic layout helpers used by intake.html */
+.bg{background:#f6f7fb;color:#111827}
+.wrap{max-width:1100px;margin:0 auto;padding:1.25rem}
+.content-narrow{max-width:820px}
+.site-header .nav{display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
+.site-header .brand{font-weight:800;color:#111827;text-decoration:none}
+.card{background:#fff;border-radius:20px;border:1px solid rgba(0,0,0,.08);padding:1rem 1.25rem;box-shadow:0 10px 20px rgba(0,0,0,.04)}
+.form label{display:block;font-weight:600;margin:.6rem 0 .25rem}
+.form input,.form textarea,.form select{width:100%;border:1px solid rgba(0,0,0,.15);border-radius:12px;padding:.7rem .8rem;font-size:1rem;background:#fff}
+.grid-2{display:grid;grid-template-columns:1fr;gap:.8rem}
+@media(min-width:720px){.grid-2{grid-template-columns:1fr 1fr}}
+.form-actions{display:flex;gap:.75rem;align-items:center;margin-top:.75rem}
+.muted{color:#6b7280}
+.small{font-size:.85rem;color:#6b7280}
+.site-footer{background:#0b1736;color:#e5e7eb;padding:1.5rem 0}
+.foot p{margin:.4rem 0}
