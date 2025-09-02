@@ -1,1 +1,1 @@
-// reserved for future interactions; accordions use <details> natively.
+// Placeholder for future interactivity.
