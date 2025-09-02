@@ -1,1 +1,59 @@
-<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Eligibility</title><link rel='stylesheet' href='/assets/styles.css'></head><body><header><div class="container nav"><strong>NYC Uncontested Divorce Law</strong><nav><a class="btn" href="/hub/">Hub</a> <a class="btn" href="/intake.html">Contact</a></nav></div></header><section class='section'><div class='container'><div class='card'><p>Quick quiz coming soon.</p></div></div></section><footer><div class="container"><div class="footer-note">© 2025 NYC Uncontested Divorce Law, PLLC. New York City Divorce Attorney | serving Manhattan, Brooklyn, Staten Island, and Queens. <strong>ATTORNEY ADVERTISING</strong>. Please do not include confidential info in forms, text, or voicemail. Email may be insecure. Contacting us does not create an attorney‑client relationship.</div></div></footer></body></html>
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Eligibility Quiz — NYC Uncontested Divorce Law</title><link rel='stylesheet' href='/assets/styles.css'></head><body>
+  <div class="notice"><div class="container"><div><strong>ATTORNEY ADVERTISING</strong> — info is general, not legal advice.</div><div class="subtitle">Serving all five boroughs • E‑Filing where available</div></div></div>
+  <header><div class="container nav">
+    <div class="brand"><span class="dot"></span><a href="/">NYC Uncontested Divorce Law</a></div>
+    <nav aria-label="Primary"><ul>
+      <li><a href="/#benefits">Benefits</a></li>
+      <li><a href="/#stages">Fees</a></li>
+      <li><a href="/#faq">FAQ</a></li>
+      <li><a href="/hub/">NYC Divorce Hub</a></li>
+      <li><a href="/intake.html">Contact</a></li>
+    </ul></nav>
+    <div><a class="btn btn-ghost" href="tel:+15133844407">Call (513) 384-4407</a> <a class="btn btn-primary" href="mailto:intake@uncontestednyc.com?subject=Uncontested%20Divorce%20Consult">Email</a></div>
+  </div></header>
+<main class='section'><div class='container'>
+  <h2 class='title'>Eligibility Quiz (Residency & uncontested fit)</h2>
+  <div class='card'>
+    <form id="quiz" onsubmit="checkFit(event)">
+      <p><strong>Residency:</strong> Have you lived in NY for 2+ years, or 1+ year with a NY tie (married in NY, marital residence in NY, or grounds in NY)?</p>
+      <label><input type="radio" name="res" value="yes" required> Yes</label>
+      <label style="margin-left:14px"><input type="radio" name="res" value="no"> No</label>
+      <p style="margin-top:10px"><strong>Agreement:</strong> Do you and your spouse agree on all issues (property, support, parenting)?</p>
+      <label><input type="radio" name="agree" value="yes" required> Yes</label>
+      <label style="margin-left:14px"><input type="radio" name="agree" value="no"> No</label>
+      <p style="margin-top:10px"><strong>Cooperation:</strong> Will your spouse sign or allow default?</p>
+      <label><input type="radio" name="coop" value="yes" required> Yes</label>
+      <label style="margin-left:14px"><input type="radio" name="coop" value="no"> No</label>
+      <div style="margin-top:14px"><button class="btn btn-primary" type="submit">Check fit</button></div>
+    </form>
+    <div id="result" style="margin-top:14px"></div>
+  </div>
+</div></main>
+<script>
+function checkFit(e){ e.preventDefault();
+  var res = document.querySelector('[name=res]:checked')?.value;
+  var agree = document.querySelector('[name=agree]:checked')?.value;
+  var coop = document.querySelector('[name=coop]:checked')?.value;
+  var r = document.getElementById('result');
+  if(res==='yes' && agree==='yes' && coop==='yes'){
+    r.innerHTML = '<div class="card">Looks good for a <strong>truly uncontested</strong> filing in NYC. Next: <a href="/intake.html">book a fit call</a>.</div>';
+  } else {
+    r.innerHTML = '<div class="card">This may require a custom strategy. We can still help assess options — <a href="/intake.html">request a consult</a>.</div>';
+  }
+}
+</script>
+
+  <footer><div class="container">
+    <div class="footer-grid">
+      <div><strong style="color:#111">NYC Uncontested Divorce Law</strong><br><span class="footer-note">A trade name of <em>NYC Uncontested Divorce Law, PLLC</em>. Responsible attorney: Vishal Noticewala, Esq..</span><br><span class="footer-note">Principal law office address: 275 S 5th St, Brooklyn, NY 11211 (by appointment)</span></div>
+      <div><strong style="color:#111">Contact</strong><br><a href="tel:+15133844407">(513) 384-4407</a><br><a href="mailto:intake@uncontestednyc.com">intake@uncontestednyc.com</a></div>
+      <div><strong style="color:#111">Links</strong><br><a href="/hub/">Hub</a> • <a href="/tools/eligibility.html">Eligibility Quiz</a><br><a href="/terms.html">Terms</a> • <a href="/privacy.html">Privacy</a></div>
+    </div>
+    <div class="footer-note" style="margin-top:10px">© 2025 NYC Uncontested Divorce Law, PLLC. Prior results do not guarantee a similar outcome. Contacting us does not create an attorney‑client relationship.</div>
+    <div class="disclosure">
+      <strong>New York City Divorce Attorney | serving Manhattan, Brooklyn, Staten Island, and Queens.</strong><br>
+      <strong>ATTORNEY ADVERTISING</strong><br>
+      Please do not include any confidential or sensitive information in a contact form, text message, or voicemail. The contact form sends information by non-encrypted email, which is not secure. Submitting a contact form, sending a text message, making a phone call, or leaving a voicemail does not create an attorney-client relationship.
+    </div>
+  </div></footer>
+  <a id="sticky-call" href="tel:+15133844407">Call (513) 384-4407</a></body></html>
