@@ -1,8 +1,5 @@
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Case Tracker — NYC Uncontested Divorce Law</title><link rel="stylesheet" href="/assets/styles.css"></head>
-<body>
-  <div class="notice"><div class="container"><div><span class="badge-inline">ATTORNEY ADVERTISING</span> Info is general, not legal advice.</div><div class="subtitle">Serving all five boroughs • E‑Filing where available</div></div></div>
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Case Tracker — NYC Uncontested Divorce Law</title><link rel='stylesheet' href='/assets/styles.css'></head><body>
+  <div class="notice"><div class="container"><div><strong>ATTORNEY ADVERTISING</strong> — info is general, not legal advice.</div><div class="subtitle">Serving all five boroughs • E‑Filing where available</div></div></div>
   <header>
     <div class="container nav">
       <div class="brand"><span class="dot"></span><a href="/">NYC Uncontested Divorce Law</a></div>
@@ -18,8 +15,8 @@
       <div><a class="btn btn-ghost" href="tel:+15133844407">Call (513) 384-4407</a> <a class="btn btn-primary" href="mailto:intake@uncontestednyc.com?subject=Uncontested%20Divorce%20Consult">Email</a></div>
     </div>
   </header>
-
-<main class="section"><div class="container">
+  <div id="overlay" aria-hidden="true"></div>
+<main class='section'><div class='container'>
   <div class="hub-hero"><div class="bg"></div><div class="content">
     <h2 class="title" style="margin:0">Live Case Tracker (demo)</h2>
     <p class="subtitle">Client‑specific link provided after engagement.</p>
@@ -29,26 +26,24 @@
     <p><label>Case ID: <input id="cid" value="DEMO-123" style="padding:8px;border-radius:12px;border:1px solid var(--line)"></label> <button class="btn" onclick="load()">Load</button></p>
     <div id="timeline"></div>
   </div>
+  <script>
+  function load(){
+    const stages=[["Engaged","Complete"],["Drafting","In progress"],["Filed","Complete"],["Service","Complete"],["Judicial review","Pending"],["Judgment","Not yet"]];
+    let html="<div class='checklist'>"; stages.forEach(s=> html+= "<div class='check'><strong>"+s[0]+"</strong> — "+s[1]+"</div>"); html+="</div>";
+    document.getElementById('timeline').innerHTML=html;
+  } load();
+  </script>
 </div></main>
-
   <footer>
     <div class="container">
-      <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:18px">
-        <div><strong>NYC Uncontested Divorce Law</strong><br>A trade name of <em>NYC Uncontested Divorce Law, PLLC</em>.<br>Responsible attorney: Vishal Noticewala, Esq..<br><span class="subtitle">Principal law office address: 275 S 5th St, Brooklyn, NY 11211 (by appointment)</span></div>
+      <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:16px">
+        <div><strong>NYC Uncontested Divorce Law</strong><br>A trade name of <em>NYC Uncontested Divorce Law, PLLC</em>. Responsible attorney: Vishal Noticewala, Esq..<br><span class="subtitle">Principal law office address: 275 S 5th St, Brooklyn, NY 11211 (by appointment)</span></div>
         <div><strong>Contact</strong><br><a href="tel:+15133844407">(513) 384-4407</a><br><a href="mailto:intake@uncontestednyc.com">intake@uncontestednyc.com</a></div>
         <div><strong>Links</strong><br><a href="/hub/">Hub</a><br><a href="/terms.html">Terms</a> • <a href="/privacy.html">Privacy</a></div>
       </div>
-      <div class="footer-note" style="margin-top:12px">© 2025 NYC Uncontested Divorce Law, PLLC. Prior results do not guarantee a similar outcome. Contacting us does not create an attorney‑client relationship.</div>
-      <div class="footer-note" style="margin-top:8px">Photo credits: Unsplash (non‑exclusive).</div>
+      <div class="footer-note" style="margin-top:10px">© 2025 NYC Uncontested Divorce Law, PLLC. Prior results do not guarantee a similar outcome. Contacting us does not create an attorney‑client relationship.</div>
+      <div class="footer-note" style="margin-top:6px">Photos: Unsplash (query-based; no attribution required).</div>
     </div>
   </footer>
   <a id="sticky-call" href="tel:+15133844407">Call (513) 384-4407</a>
-
-<script>
-function load(){
-  const stages=[["Engaged","Complete"],["Drafting","In progress"],["Filed","Complete"],["Service","Complete"],["Judicial review","Pending"],["Judgment","Not yet"]];
-  let html="<div class='checklist'>"; stages.forEach(s=> html+= "<div class='check'><strong>"+s[0]+"</strong> — "+s[1]+"</div>"); html+="</div>";
-  document.getElementById('timeline').innerHTML=html;
-} load();
-</script>
 </body></html>

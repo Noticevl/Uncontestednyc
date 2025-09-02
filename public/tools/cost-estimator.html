@@ -1,8 +1,5 @@
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Total Cost Estimator — NYC Uncontested Divorce Law</title><link rel="stylesheet" href="/assets/styles.css"></head>
-<body>
-  <div class="notice"><div class="container"><div><span class="badge-inline">ATTORNEY ADVERTISING</span> Info is general, not legal advice.</div><div class="subtitle">Serving all five boroughs • E‑Filing where available</div></div></div>
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Total Cost Estimator — NYC Uncontested Divorce Law</title><link rel='stylesheet' href='/assets/styles.css'></head><body>
+  <div class="notice"><div class="container"><div><strong>ATTORNEY ADVERTISING</strong> — info is general, not legal advice.</div><div class="subtitle">Serving all five boroughs • E‑Filing where available</div></div></div>
   <header>
     <div class="container nav">
       <div class="brand"><span class="dot"></span><a href="/">NYC Uncontested Divorce Law</a></div>
@@ -18,8 +15,8 @@
       <div><a class="btn btn-ghost" href="tel:+15133844407">Call (513) 384-4407</a> <a class="btn btn-primary" href="mailto:intake@uncontestednyc.com?subject=Uncontested%20Divorce%20Consult">Email</a></div>
     </div>
   </header>
-
-<main class="section"><div class="container">
+  <div id="overlay" aria-hidden="true"></div>
+<main class='section'><div class='container'>
   <div class="hub-hero"><div class="bg"></div><div class="content">
     <h2 class="title" style="margin:0">Total Cost Estimator</h2>
     <p class="subtitle">Your flat fee is $5,000 (includes standard filing fees + routine NYC service). Rare extras are estimated here.</p>
@@ -28,32 +25,30 @@
   <div class="faq-group">
     <label><input type="checkbox" id="pub"> Publication / alternate service (rare) — est. $300–$800</label><br>
     <label><input type="checkbox" id="intl"> International service (rare) — est. $300–$1000</label><br>
-    <label>Additional certified copies @ $10 each (typical) <input type="number" id="copies" min="0" value="0" style="padding:6px;border-radius:10px;border:1px solid var(--line)"></label><br><br>
+    <label>Additional certified copies @ $10 each <input type="number" id="copies" min="0" value="0" style="padding:6px;border-radius:10px;border:1px solid var(--line)"></label><br><br>
     <button class="btn btn-primary" onclick="calc()">Calculate</button>
     <div id="out" style="margin-top:12px"></div>
   </div>
+  <script>
+  function calc(){
+    let extras = 0; let notes=[];
+    if(document.getElementById('pub').checked){extras+=500;notes.push('Publication/alternate service (estimate)');}
+    if(document.getElementById('intl').checked){extras+=600;notes.push('International service (estimate)');}
+    const copies = parseInt(document.getElementById('copies').value||"0"); extras+=copies*10; if(copies>0) notes.push(copies+' certified copies');
+    document.getElementById('out').innerHTML = "<div style='border-radius:18px;padding:14px;background:linear-gradient(135deg,#0ea5e9,#6366f1);color:#fff'>Estimated extras: $"+extras+" (flat fee remains $5,000). "+(notes.join(', ')||'No extras selected.')+"</div>";
+  }
+  </script>
 </div></main>
-
   <footer>
     <div class="container">
-      <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:18px">
-        <div><strong>NYC Uncontested Divorce Law</strong><br>A trade name of <em>NYC Uncontested Divorce Law, PLLC</em>.<br>Responsible attorney: Vishal Noticewala, Esq..<br><span class="subtitle">Principal law office address: 275 S 5th St, Brooklyn, NY 11211 (by appointment)</span></div>
+      <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:16px">
+        <div><strong>NYC Uncontested Divorce Law</strong><br>A trade name of <em>NYC Uncontested Divorce Law, PLLC</em>. Responsible attorney: Vishal Noticewala, Esq..<br><span class="subtitle">Principal law office address: 275 S 5th St, Brooklyn, NY 11211 (by appointment)</span></div>
         <div><strong>Contact</strong><br><a href="tel:+15133844407">(513) 384-4407</a><br><a href="mailto:intake@uncontestednyc.com">intake@uncontestednyc.com</a></div>
         <div><strong>Links</strong><br><a href="/hub/">Hub</a><br><a href="/terms.html">Terms</a> • <a href="/privacy.html">Privacy</a></div>
       </div>
-      <div class="footer-note" style="margin-top:12px">© 2025 NYC Uncontested Divorce Law, PLLC. Prior results do not guarantee a similar outcome. Contacting us does not create an attorney‑client relationship.</div>
-      <div class="footer-note" style="margin-top:8px">Photo credits: Unsplash (non‑exclusive).</div>
+      <div class="footer-note" style="margin-top:10px">© 2025 NYC Uncontested Divorce Law, PLLC. Prior results do not guarantee a similar outcome. Contacting us does not create an attorney‑client relationship.</div>
+      <div class="footer-note" style="margin-top:6px">Photos: Unsplash (query-based; no attribution required).</div>
     </div>
   </footer>
   <a id="sticky-call" href="tel:+15133844407">Call (513) 384-4407</a>
-
-<script>
-function calc(){
-  let extras = 0; let notes=[];
-  if(document.getElementById('pub').checked){extras+=500;notes.push('Publication/alternate service (estimate)');}
-  if(document.getElementById('intl').checked){extras+=600;notes.push('International service (estimate)');}
-  const copies = parseInt(document.getElementById('copies').value||"0"); extras+=copies*10; if(copies>0) notes.push(copies+' certified copies');
-  document.getElementById('out').innerHTML = "<div class='cta-band' style='background:linear-gradient(135deg,#0ea5e9,#7c3aed)'>Estimated extras: $"+extras+" (flat fee remains $5,000). "+(notes.join(', ')||'No extras selected.')+"</div>";
-}
-</script>
 </body></html>
