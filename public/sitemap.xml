@@ -1,10 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
   <url><loc>https://www.uncontestednyc.com/</loc></url>
   <url><loc>https://www.uncontestednyc.com/intake.html</loc></url>
-  <url><loc>https://www.uncontestednyc.com/hub/</loc></url>
-  <url><loc>https://www.uncontestednyc.com/tools/eligibility.html</loc></url>
-  <url><loc>https://www.uncontestednyc.com/tools/cost-estimator.html</loc></url>
   <url><loc>https://www.uncontestednyc.com/terms.html</loc></url>
   <url><loc>https://www.uncontestednyc.com/privacy.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/faq.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/cost.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/timeline.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/residency.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/grounds.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/forms-overview.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/service.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/notarization.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/name-change.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/children.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/property.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/after-judgment.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/boroughs.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/tools/eligibility.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/tools/cost-estimator.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/boroughs/manhattan.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/boroughs/brooklyn.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/boroughs/queens.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/boroughs/bronx.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/boroughs/staten-island.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/resources/official-links.html</loc></url>
 </urlset>

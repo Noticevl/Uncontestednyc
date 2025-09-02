@@ -1,6 +1,5 @@
-<!doctype html><html lang='en'><head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><title>Eligibility Quiz</title>
-<link rel='stylesheet' href='/assets/styles.css'></head><body>
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Eligibility Quiz (Residency & Uncontested Fit)</title><link rel='stylesheet' href='/assets/styles.css'></head><body>
   <div class="notice"><div class="container">
     <div><strong>ATTORNEY ADVERTISING</strong> — info is general, not legal advice.</div>
     <div class="subtitle">Serving all five boroughs • E‑Filing where available</div>
@@ -16,25 +15,20 @@
     </ul></nav>
     <div><a class="btn btn-ghost" href="tel:+15133844407">Call (513) 384-4407</a> <a class="btn btn-primary" href="mailto:intake@uncontestednyc.com?subject=Uncontested%20Divorce%20Consult">Email</a></div>
   </div></header>
-
-<main class='section'><div class='container'>
-  <h2 class='title'>Eligibility Quiz (Residency & Uncontested Fit)</h2>
-  <div class='card'>
-    <form id='quiz' onsubmit='checkFit(event)'>
-      <p><strong>Residency:</strong> 2+ years in NY, or 1+ year with a NY tie?</p>
-      <label><input type='radio' name='res' value='yes' required> Yes</label>
-      <label style='margin-left:14px'><input type='radio' name='res' value='no'> No</label>
-      <p style='margin-top:10px'><strong>Agreement:</strong> Do you agree on all issues?</p>
-      <label><input type='radio' name='agree' value='yes' required> Yes</label>
-      <label style='margin-left:14px'><input type='radio' name='agree' value='no'> No</label>
-      <p style='margin-top:10px'><strong>Cooperation:</strong> Will your spouse sign or allow default?</p>
-      <label><input type='radio' name='coop' value='yes' required> Yes</label>
-      <label style='margin-left:14px'><input type='radio' name='coop' value='no'> No</label>
-      <div style='margin-top:14px'><button class='btn btn-primary' type='submit'>Check fit</button></div>
-    </form>
-    <div id='result' style='margin-top:14px'></div>
-  </div>
-</div></main>
+<main class='section'><div class='container'><h2 class='title' style='font-size:30px'>Eligibility Quiz (Residency & Uncontested Fit)</h2>
+<div class='card'>Answer three quick questions to see if you’re likely a fit for a truly uncontested NYC divorce.</div>
+<div class='card'>
+  <form id='quiz' onsubmit='checkFit(event)'>
+    <p><strong>Residency</strong> — Have you or your spouse lived in NY for two years, or for one year with a NY tie (married in NY, lived in NY as spouses, or grounds in NY)?</p>
+    <p><label><input type='radio' name='res' value='yes' required> Yes</label> &nbsp; <label><input type='radio' name='res' value='no'> No</label></p>
+    <p><strong>Agreement</strong> — Do you both agree on all issues (property, parenting, support) or expect a true default?</p>
+    <p><label><input type='radio' name='agree' value='yes' required> Yes</label> &nbsp; <label><input type='radio' name='agree' value='no'> No</label></p>
+    <p><strong>Cooperation</strong> — Will your spouse sign or allow service/default without games?</p>
+    <p><label><input type='radio' name='coop' value='yes' required> Yes</label> &nbsp; <label><input type='radio' name='coop' value='no'> No</label></p>
+    <p><button class='btn btn-primary' type='submit'>Check fit</button></p>
+  </form>
+  <div id='result'></div>
+</div>
 <script>
 function checkFit(e){ e.preventDefault();
   var res = document.querySelector('[name=res]:checked')?.value;
@@ -42,13 +36,14 @@ function checkFit(e){ e.preventDefault();
   var coop = document.querySelector('[name=coop]:checked')?.value;
   var r = document.getElementById('result');
   if(res==='yes' && agree==='yes' && coop==='yes'){
-    r.innerHTML = '<div class="card">Looks good for a <strong>truly uncontested</strong> filing in NYC. Next: <a href="/intake.html">book a fit call</a>.</div>';
+    r.innerHTML = "<div class='card'><strong>Good fit for truly uncontested.</strong> Next: <a href='/intake.html'>book a fit call</a>. We’ll confirm DRL §230 and prepare your packet.</div>";
   } else {
-    r.innerHTML = '<div class="card">May require a custom strategy. We can still help — <a href="/intake.html">request a consult</a>.</div>';
+    r.innerHTML = "<div class='card'><strong>May need a custom plan.</strong> We’ll assess options on a free consult — <a href='/intake.html'>contact us</a>.</div>";
   }
 }
 </script>
-
+</div></main>
+  <div class="skyline"></div>
   <footer><div class="container">
     <div class="footer-grid">
       <div><strong style="color:#fff">NYC Uncontested Divorce Law</strong><br>
