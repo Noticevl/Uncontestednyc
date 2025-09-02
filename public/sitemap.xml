@@ -6,6 +6,9 @@
   <url><loc>https://www.uncontestednyc.com/privacy.html</loc></url>
   <url><loc>https://www.uncontestednyc.com/faq.html</loc></url>
   <url><loc>https://www.uncontestednyc.com/hub/</loc></url>
+  <url><loc>https://www.uncontestednyc.com/resources/official-links.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/tools/eligibility.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/tools/cost-estimator.html</loc></url>
   <url><loc>https://www.uncontestednyc.com/hub/cost.html</loc></url>
   <url><loc>https://www.uncontestednyc.com/hub/timeline.html</loc></url>
   <url><loc>https://www.uncontestednyc.com/hub/residency.html</loc></url>
@@ -18,12 +21,61 @@
   <url><loc>https://www.uncontestednyc.com/hub/property.html</loc></url>
   <url><loc>https://www.uncontestednyc.com/hub/after-judgment.html</loc></url>
   <url><loc>https://www.uncontestednyc.com/hub/boroughs.html</loc></url>
-  <url><loc>https://www.uncontestednyc.com/tools/eligibility.html</loc></url>
-  <url><loc>https://www.uncontestednyc.com/tools/cost-estimator.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/ud-packet-deep-dive.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/default-judgment.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/publication-service.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/international-service.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/cssa-calculation.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/settlement-agreement-essentials.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/nyscef-consent.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/edds-explained.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/apostille-guide.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/deeds-and-qdros.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/pro-se-vs-retain.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/common-mistakes.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/glossary.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/case-tracker-explained.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/retainer-explained.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/refund-policy-details.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/certified-copies-howto.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/name-change-howto.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/address-privacy.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/hague-service.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/service-abroad-tips.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/e-signatures-and-notary.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/checklist-pre-filing.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/checklist-post-judgment.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/how-to-read-your-judgment.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/where-things-slow-down.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/what-to-bring-to-intake.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/marriage-certificate-issues.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/affidavit-tips.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/acknowledgment-of-defendant.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/default-timing-rules.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/stopping-the-case.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/changing-venue.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/when-you-need-a-translator.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/special-issues-military.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/bankruptcy-overlap.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/real-property-transfer.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/retirement-and-qdro-basics.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/health-insurance-post-divorce.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/tax-season-notes.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/domestic-violence-safety.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/protective-orders-and-divorce.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/mediation-vs-uncontested.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/spousal-support-basics.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/filing-with-children-overview.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/usc-ids-and-travel.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/social-media-and-divorce.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/digital-records-and-evidence.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/email-etiquette-with-the-court.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/getting-updates-on-your-case.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/how-calendars-work.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub/document-naming.html</loc></url>
   <url><loc>https://www.uncontestednyc.com/boroughs/manhattan.html</loc></url>
   <url><loc>https://www.uncontestednyc.com/boroughs/brooklyn.html</loc></url>
   <url><loc>https://www.uncontestednyc.com/boroughs/queens.html</loc></url>
   <url><loc>https://www.uncontestednyc.com/boroughs/bronx.html</loc></url>
   <url><loc>https://www.uncontestednyc.com/boroughs/staten-island.html</loc></url>
-  <url><loc>https://www.uncontestednyc.com/resources/official-links.html</loc></url>
 </urlset>
