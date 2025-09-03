@@ -1,19 +1,15 @@
-// Popover close when clicking outside
-document.addEventListener('click', (e)=>{
-  document.querySelectorAll('details.pill[open]').forEach(d=>{
-    if(!d.contains(e.target)) d.removeAttribute('open')
-  })
-})
 
-// Tabs on hub page
-const hubTabs = document.querySelectorAll('[data-hub-tab]')
-const hubPanels = document.querySelectorAll('[data-hub-panel]')
-if(hubTabs.length){
-  const activate = (id)=>{
-    hubTabs.forEach(b=>b.classList.toggle('active', b.dataset.hubTab===id))
-    hubPanels.forEach(p=>p.style.display = (p.dataset.hubPanel===id?'block':'none'))
-  }
-  hubTabs.forEach(b=>b.addEventListener('click', (e)=>{e.preventDefault(); activate(b.dataset.hubTab)}))
-  // default
-  activate(hubTabs[0].dataset.hubTab)
-}
+document.addEventListener('DOMContentLoaded', () => {
+  const tabs = document.querySelectorAll('[data-tab]');
+  const panels = document.querySelectorAll('[data-panel]');
+  tabs.forEach(t => {
+    t.addEventListener('click', () => {
+      const name = t.getAttribute('data-tab');
+      tabs.forEach(x => x.classList.remove('active'));
+      t.classList.add('active');
+      panels.forEach(p => {
+        p.classList.toggle('active', p.getAttribute('data-panel') === name);
+      });
+    });
+  });
+});
