@@ -1,42 +1,36 @@
 
-// Popovers for chips
-document.querySelectorAll('.chip').forEach(chip=>{
-  const content = chip.dataset.popover;
-  if(!content) return;
-  const pop = document.createElement('div');
-  pop.className = 'pop';
-  pop.textContent = content;
-  chip.appendChild(pop);
-  chip.addEventListener('click', e=>{
-    const isOpen = chip.getAttribute('aria-expanded')==='true';
-    document.querySelectorAll('.chip[aria-expanded="true"]').forEach(c=>{
-      c.setAttribute('aria-expanded','false');
-      c.querySelector('.pop').style.display='none';
-    });
-    if(!isOpen){
-      chip.setAttribute('aria-expanded','true');
-      pop.style.display='block';
-    }
+// Tabs
+document.querySelectorAll('[role="tab"]').forEach(btn=>{
+  btn.addEventListener('click', e=>{
+    const set = btn.closest('[data-tabset]');
+    set.querySelectorAll('[role="tab"]').forEach(t=>t.setAttribute('aria-selected','false'));
+    btn.setAttribute('aria-selected','true');
+    const target = btn.getAttribute('aria-controls');
+    set.querySelectorAll('.tabpanel').forEach(p=>p.classList.remove('active'));
+    set.querySelector('#'+target).classList.add('active');
   });
 });
-document.addEventListener('click', e=>{
-  if(!e.target.closest('.chip')){
-    document.querySelectorAll('.chip[aria-expanded="true"]').forEach(c=>{
-      c.setAttribute('aria-expanded','false');
-      c.querySelector('.pop').style.display='none';
-    });
-  }
+// Default first tab active
+document.querySelectorAll('[data-tabset]').forEach(set=>{
+  const first = set.querySelector('[role="tab"]');
+  const firstPanel = set.querySelector('.tabpanel');
+  if(first) first.setAttribute('aria-selected','true');
+  if(firstPanel) firstPanel.classList.add('active');
 });
-
-// Tabs (hub)
-const tabbars = document.querySelectorAll('[data-tabs]');
-tabbars.forEach(bar=>{
-  const tabs = bar.querySelectorAll('.tab');
-  const panes = document.querySelectorAll('#'+bar.dataset.tabs+' > section');
-  function activate(i){
-    tabs.forEach((t,idx)=>t.classList.toggle('active', idx===i));
-    panes.forEach((p,idx)=>p.classList.toggle('active', idx===i));
-  }
-  tabs.forEach((t,idx)=> t.addEventListener('click', ()=>activate(idx)));
-  activate(0);
+// Simple chip popover
+document.querySelectorAll('[data-pop]').forEach(chip=>{
+  chip.addEventListener('click', e=>{
+    const msg = chip.getAttribute('data-pop');
+    const tip = document.createElement('div');
+    tip.textContent = msg;
+    Object.assign(tip.style, {
+      position:'absolute', background:'#0f172a', color:'#fff', padding:'8px 10px',
+      borderRadius:'10px', fontSize:'12px', zIndex:40, transform:'translate(-50%,-120%)'
+    });
+    document.body.appendChild(tip);
+    const r = chip.getBoundingClientRect();
+    tip.style.left = (r.left + r.width/2)+'px';
+    tip.style.top = (r.top) +'px';
+    setTimeout(()=> tip.remove(), 1500);
+  });
 });
