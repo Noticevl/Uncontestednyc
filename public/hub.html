@@ -1,55 +1,96 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NYC Divorce Hub · NYC Uncontested Divorce Law</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/styles.css">
-<script defer src="/assets/js/main.js"></script>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>NYC Divorce Hub — NYC Uncontested Divorce Law</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
 </head>
 <body>
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="/"><span>NYC</span><span>Uncontested</span><span>Divorce Law</span></a>
-    <nav>
-      <a href="/" >Home</a>
-      <a href="/fees.html" >Fees</a>
-      <a href="/hub.html" class='active'>NYC Divorce Hub</a>
-      <a href="/faq.html" >FAQ</a>
-      <a href="/contact.html" >Contact</a>
-      <a href="/intake.html" class="cta">Start Your Intake</a>
+
+<header class="header">
+  <div class="container inner">
+    <a href="index.html" class="brand">
+      <div>NYC <br><small>Uncontested</small></div>
+      <div><small>Divorce Law</small></div>
+    </a>
+    <nav class="nav">
+      <a href="index.html" >Home</a>
+      <a href="fees.html" >Fees</a>
+      <a href="hub.html" style="text-decoration:underline">NYC Divorce Hub</a>
+      <a href="faq.html" >FAQ</a>
+      <a href="contact.html" >Contact</a>
+      <a class="badge-link" href="intake.html">Start Your Intake</a>
     </nav>
   </div>
 </header>
-<main class="content"><section class="section"><div class="wrap">
-  <h1 class="h1">NYC Divorce Hub</h1>
-  <p class="small">This library explains the uncontested process in NYC without legal jargon. Open a topic below to read in place.</p>
-  <div class="accordion">
-<details class="pane"><summary>Eligibility</summary><div class="inner"><p>New York offers several residency paths. We map your facts to a qualifying path and confirm documentation at intake.</p></div></details>
-<details class="pane"><summary>Timeline</summary><div class="inner"><p>Typical flow: intake → drafting → signatures → filing → clerk review → Judgment. Many matters complete in 8–16 weeks after signatures; borough workload drives speed.</p></div></details>
-<details class="pane"><summary>Cost</summary><div class="inner"><p>The $5,000 plan includes attorney time, standard filing fees, and routine personal service. Outside items are quoted plainly.</p></div></details>
-<details class="pane"><summary>Forms</summary><div class="inner"><p>You’ll see only what’s needed: Summons with Notice or Verified Complaint, affidavits, child support add‑ons when applicable, service proofs, and Judgment papers.</p></div></details>
-<details class="pane"><summary>Service</summary><div class="inner"><p>We use the simplest lawful service. Where both spouses cooperate, acknowledgement of service saves time; otherwise, CPLR/DRL‑compliant methods.</p></div></details>
-<details class="pane"><summary>E‑filing</summary><div class="inner"><p>We use NYSCEF where accepted and EDDS where directed. You receive confirmations and a tidy record.</p></div></details>
-<details class="pane"><summary>Parenting & custody</summary><div class="inner"><p>Plans must be workable—residence, schedule, holidays, travel, decision‑making, communication.</p></div></details>
-<details class="pane"><summary>Child support</summary><div class="inner"><p>CSSA percentages are applied to combined income with current caps and add‑ons. We run the worksheet and include it.</p></div></details>
-<details class="pane"><summary>Property & debt</summary><div class="inner"><p>We list items concretely and show how ownership or payoff will change hands—fewer clerk questions.</p></div></details>
-<details class="pane"><summary>Name change</summary><div class="inner"><p>Restore a former name in the Judgment so it’s automatic.</p></div></details>
-<details class="pane"><summary>After the divorce</summary><div class="inner"><p>Update beneficiaries, titles, and accounts. Keep your Judgment certified copies in a safe place.</p></div></details>
-<details class="pane"><summary>Common mistakes</summary><div class="inner"><p>Unclear parenting terms, missing service proof, unreadable scans, and skipping required forms. We avoid these with checklists and two revision rounds.</p></div></details>
-<details class="pane"><summary>Checklists</summary><div class="inner"><p>Ready-to-print intake and judgment checklists are in the printables folder.</p></div></details>
-<details class="pane"><summary>Glossary</summary><div class="inner"><p>Plain‑English definitions for court terms.</p></div></details>
-<details class="pane"><summary>Borough guides</summary><div class="inner"><p>Local filing notes for Manhattan, Brooklyn, Queens, Bronx, and Staten Island.</p></div></details>
-<details class="pane"><summary>Free resources</summary><div class="inner"><p>Direct links to NYSCEF, EDDS, e‑sign, and e‑track.</p></div></details>
-</div></div></section></main>
-<footer class="site-footer">
-  <div class="wrap">
+
+
+<section class="section">
+  <div class="container">
+    <h1 style="margin:0 0 6px 0">NYC Divorce Hub</h1>
+    <p class="muted">Plain‑English guidance for uncontested divorces in NYC. Use the tabs to browse topics.</p>
+    <div class="tabs" data-tabs>
+      <div class="tab">Basics</div>
+      <div class="tab">Parenting & Support</div>
+      <div class="tab">Filing & Service</div>
+      <div class="tab">After Judgment</div>
+      <div class="tab">Borough Guides</div>
+      <div class="tab">Glossary</div>
+      <div data-tab-panel>
+        <div class="cards">
+          <div class="card"><h4>Eligibility</h4><p>Multiple residency paths under DRL §230—e.g., one spouse in NY for 2 years; or 1 year with NY ties. We’ll confirm which applies.</p></div>
+          <div class="card"><h4>Timeline</h4><p>Intake → drafting → signatures → filing → clerk review → Judgment. Many finish 8–16 weeks after signatures.</p></div>
+          <div class="card"><h4>Settlement terms</h4><p>Keep it concrete and workable: property, debts, and (if applicable) parenting terms and support.</p></div>
+          <div class="card"><h4>Name change</h4><p>Restoration in the Judgment so it’s one permanent document—no second petition.</p></div>
+          <div class="card"><h4>Digital signing</h4><p>We use e‑sign and RON where acceptable; otherwise we help arrange notarization.</p></div>
+          <div class="card"><h4>Common mistakes</h4><p>Vague parenting language, missing service proof, and unreadable scans. We prevent these with checklists and two revision rounds.</p></div>
+        </div>
+      </div>
+      <div data-tab-panel>
+        <div class="cards">
+          <div class="card"><h4>Parenting & custody</h4><p>Workable terms: residence, time schedule, holidays, decision‑making, travel, communication.</p></div>
+          <div class="card"><h4>Child support</h4><p>CSSA math with combined income and add‑ons. We’ll run the worksheet and discuss deviations where appropriate.</p></div>
+        </div>
+      </div>
+      <div data-tab-panel>
+        <div class="cards">
+          <div class="card"><h4>E‑filing</h4><p>NYSCEF wherever accepted; EDDS where directed. You receive confirmations and a tidy record.</p></div>
+          <div class="card"><h4>Service</h4><p>Simplest lawful method when spouses cooperate; otherwise CPLR‑compliant personal service or court‑approved alternatives.</p></div>
+        </div>
+      </div>
+      <div data-tab-panel>
+        <div class="cards">
+          <div class="card"><h4>Wrap‑up tasks</h4><p>Beneficiaries, titles, and accounts; obtain certified copies if needed; archive your PDFs.</p></div>
+          <div class="card"><h4>Post‑judgment questions</h4><p>We’ll point you to the right venue for minor corrections or clarifications.</p></div>
+        </div>
+      </div>
+      <div data-tab-panel>
+        <div class="cards">
+          <div class="card"><h4>Manhattan</h4><p>Supreme Court filing preferences and typical review cadence.</p></div>
+          <div class="card"><h4>Brooklyn</h4><p>Local notes on intake window and document stamping.</p></div>
+          <div class="card"><h4>Queens</h4><p>Service proof expectations and checklist quirks.</p></div>
+          <div class="card"><h4>Bronx</h4><p>Clerk requests we see commonly and how we pre‑empt them.</p></div>
+          <div class="card"><h4>Staten Island</h4><p>EDDS usage and practical details for drop‑offs.</p></div>
+        </div>
+      </div>
+      <div data-tab-panel>
+        <div class="cards">
+          <div class="card"><h4>Key terms</h4><p><strong>Uncontested:</strong> both spouses agree on all terms. <strong>CSSA:</strong> NY’s child support math. <strong>NYSCEF:</strong> e‑filing portal. <strong>EDDS:</strong> document delivery system.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
     <p><strong>New York City Divorce Attorney</strong> | serving Manhattan, Brooklyn, Staten Island, and Queens.</p>
-    <p class="tiny">ATTORNEY ADVERTISING • Please do not include any confidential or sensitive information in a contact form, text message, or voicemail. The contact form sends information by non-encrypted email, which is not secure. Submitting a contact form, sending a text message, making a phone call, or leaving a voicemail does not create an attorney–client relationship.</p>
-    <p class="tiny">© 2025 NYC Uncontested Divorce Law, PLLC.</p>
+    <p style="margin-top:8px">ATTORNEY ADVERTISING • Please do not include any confidential or sensitive information in a contact form, text message, or voicemail. The contact form sends information by non‑encrypted email, which is not secure. Submitting a contact form, sending a text message, making a phone call, or leaving a voicemail does not create an attorney–client relationship.</p>
+    <p style="margin-top:10px">© 2025 NYC Uncontested Divorce Law, PLLC.</p>
   </div>
 </footer>
+<script src="assets/script.js"></script>
 </body>
 </html>
+

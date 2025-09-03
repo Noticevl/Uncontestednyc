@@ -1,3 +1,25 @@
+
 // Tabs
-for(const tabs of document.querySelectorAll('.tabs')){const btns=[...tabs.querySelectorAll('.tab')];const panels=[...tabs.nextElementSibling.querySelectorAll('.panel')];const go=i=>{btns.forEach((b,bi)=>b.classList.toggle('active',bi===i));panels.forEach((p,pi)=>p.classList.toggle('active',pi===i));};btns.forEach((b,i)=>b.addEventListener('click',()=>go(i)));go(0);} // FAQ
-for(const b of document.querySelectorAll('.faq-btn')){b.addEventListener('click',()=>b.closest('.faq-item').classList.toggle('open'))}
+document.querySelectorAll('[data-tabs]').forEach(wrapper => {
+  const tabs = wrapper.querySelectorAll('.tab');
+  const panels = wrapper.querySelectorAll('[data-tab-panel]');
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => {
+      tabs.forEach(x => x.classList.remove('active'));
+      panels.forEach(p => p.style.display = 'none');
+      t.classList.add('active');
+      panels[i].style.display = 'block';
+    });
+  });
+  // init
+  tabs[0]?.classList.add('active');
+  panels.forEach((p, i) => p.style.display = i === 0 ? 'block':'none');
+});
+
+// Accordions
+document.querySelectorAll('.acc-item .acc-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.acc-item');
+    item.classList.toggle('open');
+  });
+});
