@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://uncontestednyc.com/</loc></url>
-  <url><loc>https://uncontestednyc.com/fees.html</loc></url>
-  <url><loc>https://uncontestednyc.com/hub.html</loc></url>
-  <url><loc>https://uncontestednyc.com/faq.html</loc></url>
-  <url><loc>https://uncontestednyc.com/contact.html</loc></url>
-  <url><loc>https://uncontestednyc.com/intake.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/</loc></url>
+  <url><loc>https://www.uncontestednyc.com/fees.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/hub.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/faq.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/contact.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/intake.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/privacy.html</loc></url>
+  <url><loc>https://www.uncontestednyc.com/terms.html</loc></url>
 </urlset>
