@@ -1,108 +1,114 @@
-
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NYC Uncontested Divorce Law — $5,000 All‑in</title>
-  <link rel="stylesheet" href="assets/styles.css">
-  <meta name="description" content="Uncontested divorce in NYC—done right, all‑in one flat fee. Clear steps, predictable timing—no surprises.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home — NYC Uncontested Divorce Law</title>
+  <meta name="description" content="Flat-fee, uncontested NYC divorce with clear steps and predictable timing—no surprises." />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/script.js"></script>
 </head>
 <body>
-  
-<header class="header">
-  <div class="container nav">
-    <div class="brand">
-      <div>NYC <small>Uncontested</small></div>
-      <div>Divorce Law</div>
-    </div>
-    <nav style="display:flex;gap:18px;align-items:center">
-      <a href="index.html">Home</a>
-      <a href="fees.html">Fees</a>
-      <a href="hub.html">NYC Divorce Hub</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-      <a class="cta" href="intake.html">Start your divorce — Start Intake</a>
-    </nav>
+  <div class="smallbar">
+    <div class="container">ATTORNEY ADVERTISING — info is general, not legal advice.</div>
   </div>
-</header>
+  <header class="header">
+    <div class="container row">
+      <div class="brand"><a href="index.html">NYC Uncontested Divorce Law</a></div>
+      <nav class="nav">
+        <a href="index.html" style="opacity:.7;">Home</a>
+        <a href="fees.html">Fees</a>
+        <a href="hub.html">NYC Divorce Hub</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="cta" href="intake.html">Start your divorce — Start Intake</a>
+    </div>
+  </header>
 
-  <main class="container">
-    <div class="grid">
-      <div class="card rel">
-        <div class="eyebrow">NEW YORK CITY DIVORCE ATTORNEY</div>
-        <h1>Uncontested divorce in NYC—done right, all‑in one flat fee.</h1>
-        <p class="lead">The $5,000 plan covers attorney time, standard New York filing fees, and routine NYC personal service. Clear steps, predictable timing—no surprises.</p>
-        <div class="pills">
-          <button class="pill info" data-pop="All fees included: attorney time + standard NY filing fees + routine NYC personal service. Outside costs (e.g., publication, international service) shown up front only if needed.">All‑in $5,000</button>
-          <button class="pill info" data-pop="Drafting, filing, service guidance, and judgment tracking are attorney‑led for a smooth clerk review.">Attorney‑led filings</button>
-          <button class="pill info" data-pop="We use NYSCEF whenever accepted and EDDS where directed. You receive confirmations and a tidy record of everything submitted.">E‑filing when available</button>
-          <button class="pill info" data-pop="We handle cases in all boroughs: Manhattan, Brooklyn, Queens, Staten Island, and the Bronx.">All five boroughs</button>
-        </div>
-        <div class="actions">
-          <a class="btn primary" href="intake.html">Start your divorce now</a>
-          <a class="btn secondary" href="hub.html">Explore the Hub</a>
-        </div>
-        <form class="quick-intake" onsubmit="goQuickIntake();return false;" aria-label="Quick intake">
-          <input id="qi-name" name="name" placeholder="Full name">
-          <input id="qi-email" name="email" placeholder="Email">
-          <input id="qi-phone" name="phone" placeholder="Phone">
-          <button class="go" type="submit">Continue</button>
+<main class="container hero">
+  <div class="hero-grid">
+    <div class="card">
+      <p class="muted" style="font-weight:800;letter-spacing:.04em">NEW YORK CITY DIVORCE ATTORNEY</p>
+      <h1>Uncontested divorce in NYC—done right, all‑in one flat fee.</h1>
+      <p class="sub">The $5,000 plan covers attorney time, standard New York filing fees, and routine NYC personal service. Clear steps, predictable timing—no surprises.</p>
+
+      <div class="pills">
+        <details class="pill"><summary>All‑in $5,000</summary>
+          <div class="popover">Flat fee covers attorney time to Judgment, standard NYC filing fees (Index Number, Note of Issue equivalents), and routine NYC personal service.</div>
+        </details>
+        <details class="pill"><summary>Attorney‑led filings</summary>
+          <div class="popover">We draft and e‑file or EDDS submit; you review and sign. Documents are organized to pass clerk review with fewer rounds of questions.</div>
+        </details>
+        <details class="pill"><summary>E‑filing when available</summary>
+          <div class="popover">We use NYSCEF whenever accepted and EDDS where required. You’ll receive confirmations and a clean archive of everything submitted.</div>
+        </details>
+        <details class="pill"><summary>All five boroughs</summary>
+          <div class="popover">Manhattan, Brooklyn, Queens, Bronx, and Staten Island. We tailor to local clerk preferences and timelines.</div>
+        </details>
+      </div>
+
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn btn-primary" href="intake.html">Start your divorce now</a>
+        <a class="btn" href="hub.html">Explore the Hub</a>
+      </div>
+
+      <div class="quick-intake" aria-label="Quick intake">
+        <form action="https://formsubmit.co/vishal@uncontestednyc.com" method="POST">
+          <input type="hidden" name="_subject" value="New Quick Intake — uncontestednyc.com" />
+          <input type="hidden" name="_next" value="thank-you.html" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input class="input" type="text" name="name" placeholder="Full name" required />
+          <input class="input" type="email" name="email" placeholder="Email" required />
+          <input class="input" type="tel" name="phone" placeholder="Phone (optional)"/>
+          <button class="btn btn-primary" type="submit">Send & continue</button>
         </form>
       </div>
-      <figure class="skyline">
-        <img src="assets/images/nyc-skyline.jpg" alt="NYC skyline and bridge at sunset">
-      </figure>
     </div>
 
-    <section class="section">
-      <h2>Protecting what matters most.</h2>
-      <p class="sub">No drama. No mystery. Just a court‑ready path from your agreement to Judgment—with timelines, updates, and documents designed to pass clerk review.</p>
-      <div class="stage-grid">
-        <div class="stage">
-          <b>Stage 1 — Intake & Drafting</b>
-          Questionnaire → document list → first draft. <b>Refund available before work is done.</b>
-        </div>
-        <div class="stage">
-          <b>Stage 2 — Filing & Service</b>
-          E‑file or EDDS; compliant service. <b>Refund available before filing occurs.</b>
-        </div>
-        <div class="stage">
-          <b>Stage 3 — Judgment & Close‑out</b>
-          Submit judgment papers; track to entry. <b>Refund available before judgment work begins.</b>
-        </div>
-      </div>
-      <div class="side">
-        <div class="stage">
-          <b>$5,000 flat fee</b>
-          Covers attorney time, standard NYC filing fees, and routine personal service. If your case needs unusual steps (translation, international service, publication), we explain them plainly and show the outside cost up front.
-        </div>
-        <div class="stage bio">
-          <img src="assets/images/headshot.jpg" alt="Vishal Noticewala headshot" style="border-radius:12px;border:1px solid var(--line)">
-          <div>
-            <b>Vishal Noticewala, Esq.</b>
-            Licensed in New York and Washington, D.C. I handle uncontested NYC divorces with plain English and predictable timelines—so you always know what’s next.
-            <div class="small" style="margin-top:6px;">275 S 5th St, Brooklyn, NY 11211 (by appointment)</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-  
-<footer>
-  <div class="container">
-    <div class="small">
-      New York City Divorce Attorney | serving Manhattan, Brooklyn, Staten Island, and Queens.
-      <br>
-      ATTORNEY ADVERTISING • Please do not include any confidential or sensitive information in a contact form, text message, or voicemail.
-      The contact form sends information by non‑encrypted email, which is not secure. Submitting a contact form, sending a text message,
-      making a phone call, or leaving a voicemail does not create an attorney–client relationship.
+    <div class="card hero-img">
+      <img class="img" src="assets/images/nyc-skyline.jpg" alt="NYC skyline" />
+      <div class="caption">NYC—calm, clear process from intake to Judgment.</div>
     </div>
-    <div class="small">© 2025 NYC Uncontested Divorce Law, PLLC.</div>
   </div>
-</footer>
-<script src="assets/script.js"></script>
 
+  <section class="section">
+    <h2>Protecting what matters most.</h2>
+    <p class="muted">No drama. No mystery. Just a court‑ready path from your agreement to Judgment—with timelines, updates, and documents designed to pass clerk review.</p>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Stage 1 — Intake & Drafting</h3>
+        <p>Questionnaire → document list → first draft. <strong>Refund available before work is done.</strong></p>
+      </div>
+      <div class="card">
+        <h3>Stage 2 — Filing & Service</h3>
+        <p>E‑file or EDDS; compliant service. <strong>Refund available before filing occurs.</strong></p>
+      </div>
+      <div class="card">
+        <h3>Stage 3 — Judgment & Close‑out</h3>
+        <p>Submit judgment papers; track to entry. <strong>Refund available before judgment work begins.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="card bio">
+      <img src="assets/images/headshot.jpg" alt="Vishal Noticewala, Esq."/>
+      <div>
+        <h3>Vishal Noticewala, Esq.</h3>
+        <p class="muted">Licensed in New York and Washington, D.C. I handle uncontested NYC divorces with plain English and predictable timelines—so you always know what’s next.</p>
+        <p class="muted">275 S 5th St, Brooklyn, NY 11211 (by appointment)</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <footer class="footer">
+    <div class="container">
+      <p><strong>New York City Divorce Attorney</strong> | serving Manhattan, Brooklyn, Staten Island, and Queens.</p>
+      <p class="muted">ATTORNEY ADVERTISING • Please do not include any confidential or sensitive information in a contact form, text message, or voicemail. The contact form sends information by non‑encrypted email, which is not secure. Submitting a contact form, sending a text message, making a phone call, or leaving a voicemail does not create an attorney‑client relationship.</p>
+      <p class="muted">© 2025 NYC Uncontested Divorce Law, PLLC.</p>
+    </div>
+  </footer>
 </body>
 </html>
