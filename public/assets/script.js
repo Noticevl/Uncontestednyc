@@ -1,44 +1,42 @@
 
-// Mobile nav (simple)
-document.addEventListener('click', (e)=>{
-  // chip tooltips
-  const chip = e.target.closest('.chip[data-tip]');
-  const anyOpen = document.querySelectorAll('.chip.active');
-  if(chip){
-    // toggle active on this, close others
-    anyOpen.forEach(c=>{ if(c!==chip) c.classList.remove('active'); });
-    chip.classList.toggle('active');
-    e.stopPropagation();
-  }else{
-    anyOpen.forEach(c=>c.classList.remove('active'));
-  }
-  if(e.target.classList.contains('close-tip')){
-    e.target.closest('.chip').classList.remove('active');
-  }
-});
-
-// Accordion
-document.querySelectorAll('.acc-btn').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    const item = btn.closest('.acc-item');
-    item.classList.toggle('open');
-  });
-});
-
-// Tabs (Hub)
-function setupTabs(){
-  const tabs = document.querySelectorAll('[data-tabs]');
-  tabs.forEach(wrapper=>{
-    const tabBtns = wrapper.querySelectorAll('.tab');
-    const panes = wrapper.querySelectorAll('.tabpane');
-    tabBtns.forEach((btn,i)=>{
-      btn.addEventListener('click',()=>{
-        tabBtns.forEach(b=>b.classList.remove('active'));
-        panes.forEach(p=>p.classList.remove('active'));
-        btn.classList.add('active');
-        panes[i].classList.add('active');
-      });
+// Popovers for chips
+document.querySelectorAll('.chip').forEach(chip=>{
+  const content = chip.dataset.popover;
+  if(!content) return;
+  const pop = document.createElement('div');
+  pop.className = 'pop';
+  pop.textContent = content;
+  chip.appendChild(pop);
+  chip.addEventListener('click', e=>{
+    const isOpen = chip.getAttribute('aria-expanded')==='true';
+    document.querySelectorAll('.chip[aria-expanded="true"]').forEach(c=>{
+      c.setAttribute('aria-expanded','false');
+      c.querySelector('.pop').style.display='none';
     });
+    if(!isOpen){
+      chip.setAttribute('aria-expanded','true');
+      pop.style.display='block';
+    }
   });
-}
-setupTabs();
+});
+document.addEventListener('click', e=>{
+  if(!e.target.closest('.chip')){
+    document.querySelectorAll('.chip[aria-expanded="true"]').forEach(c=>{
+      c.setAttribute('aria-expanded','false');
+      c.querySelector('.pop').style.display='none';
+    });
+  }
+});
+
+// Tabs (hub)
+const tabbars = document.querySelectorAll('[data-tabs]');
+tabbars.forEach(bar=>{
+  const tabs = bar.querySelectorAll('.tab');
+  const panes = document.querySelectorAll('#'+bar.dataset.tabs+' > section');
+  function activate(i){
+    tabs.forEach((t,idx)=>t.classList.toggle('active', idx===i));
+    panes.forEach((p,idx)=>p.classList.toggle('active', idx===i));
+  }
+  tabs.forEach((t,idx)=> t.addEventListener('click', ()=>activate(idx)));
+  activate(0);
+});
