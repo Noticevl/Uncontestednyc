@@ -1,1 +1,3 @@
-document.addEventListener('click',e=>{const h=e.target.closest('.faqHead');if(h){h.parentElement.classList.toggle('open');}})
+// Tabs
+for(const tabs of document.querySelectorAll('.tabs')){const btns=[...tabs.querySelectorAll('.tab')];const panels=[...tabs.nextElementSibling.querySelectorAll('.panel')];const go=i=>{btns.forEach((b,bi)=>b.classList.toggle('active',bi===i));panels.forEach((p,pi)=>p.classList.toggle('active',pi===i));};btns.forEach((b,i)=>b.addEventListener('click',()=>go(i)));go(0);} // FAQ
+for(const b of document.querySelectorAll('.faq-btn')){b.addEventListener('click',()=>b.closest('.faq-item').classList.toggle('open'))}
