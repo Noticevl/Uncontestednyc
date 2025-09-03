@@ -1,79 +1,53 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NYC Uncontested Divorce Law</title>
-  <meta name="description" content="Flat-fee uncontested divorces in New York City—clear steps, predictable timing, no surprises." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css" />
-  <script defer src="assets/script.js"></script>
-</head>
-<body>
 
-<header class="site-header">
-  <div class="container hdr-inner">
-    <a class="brand" href="index.html">
-      <span class="brand-line1">NYC</span>
-      <span class="brand-line2">Uncontested</span>
-      <span class="brand-line3">Divorce Law</span>
-    </a>
-    <nav class="nav">
-      <a href="index.html" class="nav-link ">Home</a>
-      <a href="fees.html" class="nav-link ">Fees</a>
-      <a href="hub.html" class="nav-link ">NYC Divorce Hub</a>
-      <a href="faq.html" class="nav-link ">FAQ</a>
-      <a href="contact.html" class="nav-link active">Contact</a>
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — NYC Uncontested Divorce Law</title>
+<link rel="stylesheet" href="assets/styles.css"></head>
+<body>
+  
+<header class="header">
+  <div class="container nav">
+    <div class="brand"><span>NYC</span> <span style="color:var(--muted);font-weight:600">Uncontested</span> <span>Divorce Law</span></div>
+    <nav>
+      <a href="index.html" >Home</a>
+      <a href="fees.html" >Fees</a>
+      <a href="hub.html" >NYC Divorce Hub</a>
+      <a href="faq.html" >FAQ</a>
+      <a href="contact.html" style="color:var(--ink)">Contact</a>
+      <a class="cta" href="intake.html">Start your divorce — Start Intake</a>
     </nav>
-    <a class="btn-cta" href="intake.html">Start your divorce — Start Intake</a>
-    <button class="menu" aria-label="Open menu" onclick="toggleMenu()">☰</button>
   </div>
 </header>
 
-<main class="container">
-  <section class="page-hero">
-    <h1>Contact</h1>
-    <p class="lead">Prefer email, a short call, or a quick intake? Choose what’s easiest—no pressure.</p>
-  </section>
-
-  <div class="cards-grid two">
-    <article class="card">
-      <form action="https://formspree.io/f/xyyrlbwg" method="POST" class="form">
-        <label>Full name
-          <input name="name" required />
-        </label>
-        <label>Email
-          <input name="email" type="email" required />
-        </label>
-        <label>Phone
-          <input name="phone" type="tel" />
-        </label>
-        <label>Message
-          <textarea name="message" rows="4" placeholder="Briefly describe your situation"></textarea>
-        </label>
-        <button class="btn-primary" type="submit">Send</button>
+  <main class="container">
+    <h1 class="h1">Contact</h1>
+    <div class="grid" style="grid-template-columns:1.1fr .9fr">
+      <form class="card form" action="https://formspree.io/f/xayzjvpl" method="POST">
+        <label>Full name</label><input required name="name" type="text" />
+        <label>Email</label><input required name="email" type="email"/>
+        <label>Phone</label><input name="phone" type="tel"/>
+        <label>Message</label><textarea name="message" placeholder="Briefly describe your situation"></textarea>
+        <button class="button" type="submit">Send</button>
       </form>
-    </article>
-
-    <article class="card">
-      <h3>NYC Uncontested Divorce Law</h3>
-      <p>Phone: <a href="tel:+15133844407">(513) 384‑4407</a><br/>
-         Email: <a href="mailto:intake@uncontestednyc.com">intake@uncontestednyc.com</a><br/>
-         Address: 275 S 5th St, Brooklyn, NY 11211 (by appointment)
-      </p>
-      <p class="small">Hours by appointment. Remote signings available when permitted.</p>
-    </article>
-  </div>
-</main>
-
+      <div class="card">
+        <h3 class="h2">NYC Uncontested Divorce Law</h3>
+        <p class="small">
+          Phone: <a href="tel:+15133844407">(513) 384‑4407</a><br/>
+          Email: <a href="mailto:intake@uncontestednyc.com">intake@uncontestednyc.com</a><br/>
+          Address: 275 S 5th St, Brooklyn, NY 11211 (by appointment)
+        </p>
+        <p class="small">Hours by appointment. You’ll get a reply with two time options within one business day.</p>
+      </div>
+    </div>
+  </main>
+  
 <footer class="footer">
   <div class="container">
-    <p class="meta">New York City Divorce Attorney | serving Manhattan, Brooklyn, Staten Island, and Queens.</p>
-    <p class="legal">ATTORNEY ADVERTISING • Please do not include any confidential or sensitive information in a contact form, text message, or voicemail. The contact form sends information by non‑encrypted email, which is not secure. Submitting a contact form, sending a text message, making a phone call, or leaving a voicemail does not create an attorney‑client relationship.</p>
-    <p class="copy">© 2025 NYC Uncontested Divorce Law, PLLC.</p>
+    <p><strong>New York City Divorce Attorney</strong> | serving Manhattan, Brooklyn, Staten Island, and Queens.</p>
+    <p><strong>ATTORNEY ADVERTISING</strong> • Please do not include any confidential or sensitive information in a contact form, text message, or voicemail. The contact form sends information by non‑encrypted email, which is not secure. Submitting a contact form, sending a text message, making a phone call, or leaving a voicemail does not create an attorney‑client relationship.</p>
+    <p>© 2025 NYC Uncontested Divorce Law, PLLC.</p>
   </div>
 </footer>
-</body>
-</html>
+
+</body></html>
