@@ -1,98 +1,154 @@
-
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NYC Uncontested Divorce Law</title>
-  <link rel="stylesheet" href="assets/styles.css"/>
+  <meta name="description" content="Flat-fee uncontested divorces in New York City—clear steps, predictable timing, no surprises." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
   <script defer src="assets/script.js"></script>
 </head>
 <body>
-  
-<header class="header">
-  <div class="container nav">
-    <div class="brand"><span>NYC</span> <span style="color:var(--muted);font-weight:600">Uncontested</span> <span>Divorce Law</span></div>
-    <nav>
-      <a href="index.html" style="color:var(--ink)">Home</a>
-      <a href="fees.html" >Fees</a>
-      <a href="hub.html" >NYC Divorce Hub</a>
-      <a href="faq.html" >FAQ</a>
-      <a href="contact.html" >Contact</a>
-      <a class="cta" href="intake.html">Start your divorce — Start Intake</a>
+
+<header class="site-header">
+  <div class="container hdr-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-line1">NYC</span>
+      <span class="brand-line2">Uncontested</span>
+      <span class="brand-line3">Divorce Law</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="fees.html" class="nav-link ">Fees</a>
+      <a href="hub.html" class="nav-link ">NYC Divorce Hub</a>
+      <a href="faq.html" class="nav-link ">FAQ</a>
+      <a href="contact.html" class="nav-link ">Contact</a>
     </nav>
+    <a class="btn-cta" href="intake.html">Start your divorce — Start Intake</a>
+    <button class="menu" aria-label="Open menu" onclick="toggleMenu()">☰</button>
   </div>
 </header>
 
-  <main class="container">
-    <section class="grid hero">
-      <div class="card">
-        <div class="kicker">NEW YORK CITY DIVORCE ATTORNEY</div>
-        <h1 class="h1">Uncontested divorce in NYC—done right, all‑in one flat fee.</h1>
-        <p class="lead">The $5,000 plan covers attorney time, standard New York filing fees, and routine NYC personal service. Clear steps, predictable timing—no surprises.</p>
-        <div class="chips">
-          <span class="chip">All‑in $5,000</span>
-          <span class="chip">Attorney‑led filings</span>
-          <span class="chip">E‑filing when available</span>
-          <span class="chip">All five boroughs</span>
-        </div>
-        <div class="btnrow">
-          <a class="button" href="intake.html">Start Your Intake</a>
-          <a class="button secondary" href="hub.html">Explore the Hub</a>
-        </div>
-      </div>
-      <div>
-        <img class="heroimg card" src="assets/images/nyc-bridge.jpg" alt="NYC skyline over the East River"/>
-      </div>
-    </section>
+<main class="container">
+  <section class="hero">
+    <div class="hero-col">
+      <p class="eyebrow">NEW YORK CITY DIVORCE ATTORNEY</p>
+      <h1>Uncontested divorce in NYC—done right, all‑in one flat fee.</h1>
+      <p class="lead">The $5,000 plan covers attorney time, standard New York filing fees, and routine NYC personal service. Clear steps, predictable timing—no surprises.</p>
 
-    <section class="section">
-      <div class="kicker">Stages</div>
-      <h2 class="h2">Protecting what matters most.</h2>
-      <p class="small">No drama. No mystery. Just a court‑ready path from your agreement to Judgment—with timelines, updates, and documents designed to pass clerk review.</p>
-      <div class="stage">
-        <div class="card">
-          <h3>Stage 1 — Intake & Drafting</h3>
-          <p class="small">Questionnaire → document list → first draft. <strong>Refund available before work is done.</strong></p>
-        </div>
-        <div class="card">
-          <h3>Stage 2 — Filing & Service</h3>
-          <p class="small">E‑file or EDDS, compliant service. <strong>Refund available before filing occurs.</strong></p>
-        </div>
-        <div class="card">
-          <h3>Stage 3 — Judgment & Close‑out</h3>
-          <p class="small">Submit judgment papers; track to entry. <strong>Refund available before judgment work begins.</strong></p>
-        </div>
+      <div class="pills">
+        <button class="pill info" data-pop="p1" aria-haspopup="dialog" aria-controls="p1">All‑in $5,000</button>
+        <button class="pill info" data-pop="p2" aria-haspopup="dialog" aria-controls="p2">Attorney‑led filings</button>
+        <button class="pill info" data-pop="p3" aria-haspopup="dialog" aria-controls="p3">E‑filing when available</button>
+        <button class="pill info" data-pop="p4" aria-haspopup="dialog" aria-controls="p4">All five boroughs</button>
       </div>
-    </section>
 
-    <section class="section grid grid-3">
-      <div class="card bio">
-        <img src="assets/images/headshot.jpg" alt="Vishal Noticewala headshot"/>
+      <div class="hero-ctas">
+        <a class="btn-primary" href="intake.html">Start your divorce now</a>
+        <a class="btn-ghost" href="hub.html">Explore the Hub</a>
+      </div>
+
+      <!-- Small quick intake box -->
+      <form class="quick-intake" method="GET" action="intake.html">
+        <div class="qi-row">
+          <label>Full name
+            <input name="name" required />
+          </label>
+          <label>Email
+            <input name="email" type="email" required />
+          </label>
+          <label>Phone
+            <input name="phone" type="tel" />
+          </label>
+        </div>
+        <button class="btn-small" type="submit">Continue on intake</button>
+      </form>
+    </div>
+
+    <figure class="hero-img-card">
+      <img src="assets/images/nyc-skyline.jpg" alt="NYC skyline and bridge at sunset" />
+    </figure>
+  </section>
+
+  <section class="stages">
+    <h2>Protecting what matters most.</h2>
+    <p class="subtle">No drama. No mystery. Just a court‑ready path from your agreement to Judgment—with timelines, updates, and documents designed to pass clerk review.</p>
+
+    <div class="cards-grid">
+      <article class="card">
+        <h3>Stage 1 — Intake & Drafting</h3>
+        <p>Questionnaire → document list → first draft. <strong>Refund available before work is done.</strong></p>
+      </article>
+      <article class="card">
+        <h3>Stage 2 — Filing & Service</h3>
+        <p>E‑file or EDDS; compliant service. <strong>Refund available before filing occurs.</strong></p>
+      </article>
+      <article class="card">
+        <h3>Stage 3 — Judgment & Close‑out</h3>
+        <p>Submit judgment papers; track to entry. <strong>Refund available before judgment work begins.</strong></p>
+      </article>
+    </div>
+
+    <div class="cards-grid two">
+      <article class="card bio">
+        <img class="bio-pic" src="assets/images/headshot.jpg" alt="Vishal Noticewala, Esq. headshot" />
         <div>
-          <h3 class="h2" style="margin:0">Vishal Noticewala, Esq.</h3>
-          <p class="small">Licensed in New York and Washington, D.C. I handle uncontested NYC divorces with plain English and predictable timelines—so you always know what's next.</p>
+          <h3>Vishal Noticewala, Esq.</h3>
+          <p>Licensed in New York and Washington, D.C. I handle uncontested NYC divorces with plain English and predictable timelines—so you always know what’s next.</p>
           <p class="small">275 S 5th St, Brooklyn, NY 11211 (by appointment)</p>
         </div>
-      </div>
-      <div class="card">
-        <h3 class="h2">$5,000 flat fee</h3>
-        <p class="small">Covers attorney time, standard NYC filing fees, and routine personal service. If your case needs unusual steps (translation, international service, publication), we explain them plainly and show the outside cost up front.</p>
-      </div>
-      <div class="card">
-        <h3 class="h2">What you get</h3>
-        <p class="small">Attorney‑prepared documents, compliant service, clerk‑friendly filing, two revision rounds, judgment tracking, and a secure document archive.</p>
-      </div>
-    </section>
-  </main>
-  
+      </article>
+      <article class="card">
+        <h3>$5,000 flat fee</h3>
+        <p>Covers attorney time, standard NYC filing fees, and routine personal service. If your case needs unusual steps (translation, international service, publication), we explain them plainly and show the outside cost up front.</p>
+      </article>
+      <article class="card">
+        <h3>What you get</h3>
+        <p>Attorney‑prepared documents, compliant service, clerk‑friendly filing, two revision rounds, judgment tracking, and a secure document archive.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<!-- Popovers for the pills -->
+<div id="p1" class="popover" role="dialog" aria-modal="true" aria-labelledby="p1t">
+  <div class="pop-card">
+    <h3 id="p1t">What “all‑in $5,000” means</h3>
+    <p>Attorney time through Judgment, standard NYC filing fees, and routine local service in the five boroughs. Unusual costs are quoted before you choose them—no surprises.</p>
+    <button class="pop-close" data-close="p1">Close</button>
+  </div>
+</div>
+<div id="p2" class="popover" role="dialog" aria-modal="true" aria-labelledby="p2t">
+  <div class="pop-card">
+    <h3 id="p2t">Attorney‑led filings</h3>
+    <p>Your papers are prepared and filed by counsel. You review drafts, sign, and get confirmations when items are submitted and accepted.</p>
+    <button class="pop-close" data-close="p2">Close</button>
+  </div>
+</div>
+<div id="p3" class="popover" role="dialog" aria-modal="true" aria-labelledby="p3t">
+  <div class="pop-card">
+    <h3 id="p3t">E‑filing when available</h3>
+    <p>We use NYSCEF wherever accepted and EDDS when directed. You receive submission receipts and a tidy archive.</p>
+    <button class="pop-close" data-close="p3">Close</button>
+  </div>
+</div>
+<div id="p4" class="popover" role="dialog" aria-modal="true" aria-labelledby="p4t">
+  <div class="pop-card">
+    <h3 id="p4t">All five boroughs</h3>
+    <p>Manhattan, Brooklyn, Queens, Bronx, and Staten Island—filing practices vary and we tune documents to local preferences.</p>
+    <button class="pop-close" data-close="p4">Close</button>
+  </div>
+</div>
+
 <footer class="footer">
   <div class="container">
-    <p><strong>New York City Divorce Attorney</strong> | serving Manhattan, Brooklyn, Staten Island, and Queens.</p>
-    <p><strong>ATTORNEY ADVERTISING</strong> • Please do not include any confidential or sensitive information in a contact form, text message, or voicemail. The contact form sends information by non‑encrypted email, which is not secure. Submitting a contact form, sending a text message, making a phone call, or leaving a voicemail does not create an attorney‑client relationship.</p>
-    <p>© 2025 NYC Uncontested Divorce Law, PLLC.</p>
+    <p class="meta">New York City Divorce Attorney | serving Manhattan, Brooklyn, Staten Island, and Queens.</p>
+    <p class="legal">ATTORNEY ADVERTISING • Please do not include any confidential or sensitive information in a contact form, text message, or voicemail. The contact form sends information by non‑encrypted email, which is not secure. Submitting a contact form, sending a text message, making a phone call, or leaving a voicemail does not create an attorney‑client relationship.</p>
+    <p class="copy">© 2025 NYC Uncontested Divorce Law, PLLC.</p>
   </div>
 </footer>
-
 </body>
 </html>
