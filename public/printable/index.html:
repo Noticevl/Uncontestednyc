@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Checklists | UncontestedNYC</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <style>
+    details { border:1px solid #eee; border-radius:12px; padding:12px 14px; margin:10px 0; background:#fff }
+    summary { cursor:pointer; font-weight:700 }
+    .list { columns: 2; column-gap: 24px }
+    @media (max-width: 720px){ .list{ columns:1 } }
+    .item { break-inside: avoid; padding:4px 0 }
+    .print { float:right }
+  </style>
+</head>
+<body>
+<header class="header">
+  <div class="container row">
+    <div class="brand"><span style="display:inline-block;width:34px;height:34px;border-radius:10px;background:#06112b;margin-right:8px;"></span></div>
+    <nav class="nav">
+      <a href="/index.html">Home</a>
+      <a href="/fees.html">Fees</a>
+      <a href="/hub.html">NYC Divorce Hub</a>
+      <a href="/glossary/">Glossary</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+    <a class="btn btn-primary" href="/intake.html">Start your divorce</a>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Checklists</h1>
+  <p class="small">Printable lists so you know what’s needed and when.</p>
+
+  <p><button class="btn print" onclick="window.print()">Print this page</button></p>
+
+  <details open>
+    <summary>Uncontested Divorce — Starter Checklist</summary>
+    <div class="list">
+      <label class="item"><input type="checkbox"> Names, addresses, DOBs for both spouses</label>
+      <label class="item"><input type="checkbox"> Marriage certificate (copy)</label>
+      <label class="item"><input type="checkbox"> Grounds (DRL §170(7) — irretrievable breakdown)</label>
+      <label class="item"><input type="checkbox"> Agreement on property/debts (or confirm none)</label>
+      <label class="item"><input type="checkbox"> Children? Decide custody/parenting & support</label>
+      <label class="item"><input type="checkbox"> Insurance/beneficiaries plan (pre/post-judgment)</label>
+    </div>
+  </details>
+
+  <details>
+    <summary>Service & Filing Checklist</summary>
+    <div class="list">
+      <label class="item"><input type="checkbox"> Purchase index number</label>
+      <label class="item"><input type="checkbox"> Serve defendant (personal service rules)</label>
+      <label class="item"><input type="checkbox"> Affidavit of service (complete & notarized)</label>
+      <label class="item"><input type="checkbox"> Defendant’s acknowledgment/appearance (if any)</label>
+      <label class="item"><input type="checkbox"> E-file via NYSCEF or submit via EDDS</label>
+    </div>
+  </details>
+
+  <details>
+    <summary>Submission Packet Checklist</summary>
+    <div class="list">
+      <label class="item"><input type="checkbox"> Proposed Judgment of Divorce</label>
+      <label class="item"><input type="checkbox"> Stipulation of Settlement (if applicable)</label>
+      <label class="item"><input type="checkbox"> Findings of Fact/Conclusions of Law (if required)</label>
+      <label class="item"><input type="checkbox"> Child support worksheets (if applicable)</label>
+      <label class="item"><input type="checkbox"> DRL §255 Barriers statement (if applicable)</label>
+    </div>
+  </details>
+
+  <details>
+    <summary>After Judgment Checklist</summary>
+    <div class="list">
+      <label class="item"><input type="checkbox"> Name change updates (SSA, DMV, passport, bank)</label>
+      <label class="item"><input type="checkbox"> Beneficiaries & insurance</label>
+      <label class="item"><input type="checkbox"> Title/asset transfers</label>
+      <label class="item"><input type="checkbox"> Parenting plan calendars</label>
+      <label class="item"><input type="checkbox"> Close joint accounts / update passwords</label>
+    </div>
+  </details>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div>New York City Divorce Attorney | serving Manhattan, Brooklyn, Staten Island, and Queens.</div>
+    <div style="margin-top:10px;font-size:14px;max-width:980px">
+      ATTORNEY ADVERTISING · Do not include confidential or sensitive information in a contact form, text message, or voicemail.
+    </div>
+    <div style="margin-top:10px;font-size:14px">© 2025 NYC Uncontested Divorce Law, PLLC.</div>
+  </div>
+</footer>
+</body>
+</html>
