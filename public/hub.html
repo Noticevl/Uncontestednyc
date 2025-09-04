@@ -1,123 +1,91 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>NYC Uncontested Divorce Law</title>
-  <link rel="stylesheet" href="assets/css/styles.css"/>
-  <script defer src="assets/js/main.js"></script>
-</head>
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NYC Divorce Hub – NYC Uncontested Divorce Law</title>
+<link rel="stylesheet" href="/assets/styles.css"><body>
 
-<body>
-<header class="nav">
-  <div class="container inner">
-    <div class="brand">NYC Uncontested Divorce Law</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="fees.html">Fees</a>
-      <a href="hub.html">NYC Divorce Hub</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-      <a class="cta" href="intake.html">Start your divorce</a>
+<header class="header">
+  <div class="container row">
+    <div class="brand"><span style="display:inline-block;width:34px;height:34px;border-radius:10px;background:#0b1120;margin-right:4px"></span> NYC Uncontested Divorce Law</div>
+    <nav class="nav">
+      <a href="/index.html">Home</a>
+      <a href="/fees.html">Fees</a>
+      <a href="/hub.html">NYC Divorce Hub</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/contact.html">Contact</a>
+      <a class="btn btn-primary" href="/intake.html">Start your divorce</a>
     </nav>
   </div>
 </header>
 
 <main class="container">
-  <section class="card">
-    <h1>NYC Divorce Hub</h1>
-    <p class="sub">Plain‑English guidance for uncontested divorces in NYC.</p>
-
-    <div class="tabs">
-      <button class="tab-btn active" data-tab="basics">Basics</button>
-      <button class="tab-btn" data-tab="parenting">Parenting & Support</button>
-      <button class="tab-btn" data-tab="filing">Filing & Service</button>
-      <button class="tab-btn" data-tab="after">After Judgment</button>
-      <button class="tab-btn" data-tab="boroughs">Borough Guides</button>
-      <button class="tab-btn" data-tab="glossary">Glossary</button>
-      <button class="tab-btn" data-tab="resources">Resources</button>
-      <button class="tab-btn" data-tab="checklists">Checklists</button>
-    </div>
-
-    <div id="basics" class="tab-panel active">
-      <div class="columns-2">
-        <div class="kard"><h3>Eligibility</h3><p>New York offers several residency paths under DRL §230, including: (1) either spouse has lived in NY for two years; (2) either spouse has lived in NY for one year and the marriage took place in NY or the cause occurred in NY; or (3) both parties are residents at filing and the cause occurred in NY. We confirm the path at intake.</p></div>
-        <div class="kard"><h3>Timeline</h3><p>Typical flow: intake → drafting → signatures → filing → clerk review → Judgment. Many matters complete in 8–16 weeks after signatures, but timing varies by borough workload.</p></div>
-        <div class="kard"><h3>Forms</h3><p>You’ll see only what’s needed—Summons/Complaint or Verified Complaint, Sworn Statements, Acknowledgment of Service or equivalent, Child Support forms when applicable, and the Judgment package.</p></div>
-        <div class="kard"><h3>Costs</h3><p>Your flat $5,000 covers attorney time, standard NY filing fees, and routine local service. We show any non‑standard costs before you choose them.</p></div>
+  <h1 class="h1">NYC Divorce Hub</h1>
+  <div class="tabs" data-tabs="hubpanes">
+    <div class="tab">Basics</div>
+    <div class="tab">Parenting & Support</div>
+    <div class="tab">Filing & Service</div>
+    <div class="tab">After Judgment</div>
+    <div class="tab">Borough Guides</div>
+    <div class="tab">Glossary</div>
+  </div>
+  <div id="hubpanes" class="tabpanes">
+    <section class="active">
+      <div class="grid" style="grid-template-columns:repeat(3,1fr)">
+        <div class="card"><div class="h2">Eligibility</div><div class="small">Multiple residency paths under DRL §230—e.g., one spouse in NY for 2 years; or 1 year with NY ties. We’ll confirm which applies to you.</div></div>
+        <div class="card"><div class="h2">Timeline</div><div class="small">Intake → drafting → signatures → filing → clerk review → Judgment. Many finish 8–16 weeks after signatures.</div></div>
+        <div class="card"><div class="h2">Cost</div><div class="small">Your $5,000 covers attorney time, standard NYC filing fees, and routine service. Unusual items are explained up front.</div></div>
+        <div class="card"><div class="h2">Forms</div><div class="small">Only what’s needed: Summons with Notice or Verified Complaint, Sworn Statements, affidavits, and the proposed Judgment.</div></div>
+        <div class="card"><div class="h2">Settlement terms</div><div class="small">If you have children or property, terms must be clear and workable. We write in plain English to prevent clerk questions.</div></div>
+        <div class="card"><div class="h2">Service basics</div><div class="small">We use the simplest lawful method—CPLR/DRL‑compliant personal service or approved alternatives when needed.</div></div>
       </div>
-    </div>
-
-    <div id="parenting" class="tab-panel">
-      <div class="columns-2">
-        <div class="kard"><h3>Parenting plans</h3><p>Keep it workable: where the child lives, parenting time schedule, holidays, travel, decision‑making, and how you’ll communicate.</p></div>
-        <div class="kard"><h3>Child support</h3><p>New York’s CSSA applies a percentage to combined parental income with caps and add‑ons. We run the math and include the worksheets for a clean review.</p></div>
-        <div class="kard"><h3>Health & add‑ons</h3><p>Health insurance, unreimbursed medical, childcare, and extracurriculars are commonly addressed so there are no surprises later.</p></div>
-        <div class="kard"><h3>Special cases</h3><p>Relocation clauses or flexible schedules can be written plainly. We keep the terms realistic so the clerk accepts them.</p></div>
+    </section>
+    <section>
+      <div class="grid" style="grid-template-columns:repeat(3,1fr)">
+        <div class="card"><div class="h2">Parenting plan</div><div class="small">Where the child lives, a parenting schedule, holidays, travel, decision‑making, and communication. Clarity prevents delays.</div></div>
+        <div class="card"><div class="h2">Child support</div><div class="small">CSSA starts with combined parental income and applies statutory percentages. We run the math and include required worksheets.</div></div>
+        <div class="card"><div class="h2">Health & add‑ons</div><div class="small">Health insurance, childcare, extracurriculars—how costs are shared and paid. We align language with clerk expectations.</div></div>
       </div>
-    </div>
-
-    <div id="filing" class="tab-panel">
-      <div class="columns-2">
-        <div class="kard"><h3>E‑filing</h3><p>We use NYSCEF whenever accepted and EDDS where directed. You’ll receive confirmations and a tidy record of everything submitted.</p></div>
-        <div class="kard"><h3>Service</h3><p>When both spouses cooperate, we use the simplest lawful service. Otherwise we follow CPLR/DRL‑compliant personal service or court‑approved alternatives if needed.</p></div>
-        <div class="kard"><h3>Notary & signing</h3><p>We accommodate RON or in‑person notarization. You’ll get clear signing instructions with every packet.</p></div>
-        <div class="kard"><h3>After filing</h3><p>We monitor clerk notes and correct minor issues before they cause delay. Two rounds of revisions are included.</p></div>
+    </section>
+    <section>
+      <div class="grid" style="grid-template-columns:repeat(3,1fr)">
+        <div class="card"><div class="h2">E‑filing</div><div class="small">We use NYSCEF when permitted or EDDS when directed. You receive confirmations and a tidy record of everything submitted.</div></div>
+        <div class="card"><div class="h2">Personal service</div><div class="small">When both spouses cooperate, service is simple. If not, we use court‑approved alternatives as needed to keep the case on track.</div></div>
+        <div class="card"><div class="h2">Name change</div><div class="small">If you want your former name restored, we include it in the pleadings and the Judgment—one permanent document.</div></div>
       </div>
-    </div>
-
-    <div id="after" class="tab-panel">
-      <div class="columns-2">
-        <div class="kard"><h3>Final Judgment</h3><p>Once Judgment enters, you’ll receive certified copies and a complete digital archive for your records.</p></div>
-        <div class="kard"><h3>Clean wrap‑up</h3><p>We guide name‑change notices and beneficiary/account updates so everything matches the Judgment.</p></div>
+    </section>
+    <section>
+      <div class="grid" style="grid-template-columns:repeat(3,1fr)">
+        <div class="card"><div class="h2">Close‑out</div><div class="small">Update titles, accounts, and beneficiaries. We’ll help you download and store your final documents.</div></div>
+        <div class="card"><div class="h2">Certified copies</div><div class="small">When you need certified copies for agencies, we’ll show you where and how to request them.</div></div>
+        <div class="card"><div class="h2">Post‑judgment tweaks</div><div class="small">Small fixes or clarifications can be handled—ask us before you assume it’s complicated.</div></div>
       </div>
-    </div>
-
-    <div id="boroughs" class="tab-panel">
-      <div class="columns-2">
-        <div class="kard"><h3>Manhattan (New York County)</h3><p>Supreme Court, 60 Centre St. NYSCEF preferred. Clerk review times vary; we prepare a clerk‑friendly packet.</p></div>
-        <div class="kard"><h3>Brooklyn (Kings County)</h3><p>Supreme Court, 360 Adams St. E‑filing accepted; service must follow CPLR unless waived.</p></div>
-        <div class="kard"><h3>Queens County</h3><p>Supreme Court, 88‑11 Sutphin Blvd. E‑filing accepted in most uncontested matters.</p></div>
-        <div class="kard"><h3>Bronx County</h3><p>Supreme Court, 851 Grand Concourse. Expect variability; we keep you updated.</p></div>
-        <div class="kard"><h3>Staten Island (Richmond)</h3><p>Supreme Court, 18 Richmond Terrace. Paper/E‑filing per clerk guidance; we handle either path.</p></div>
+    </section>
+    <section>
+      <div class="grid" style="grid-template-columns:repeat(3,1fr)">
+        <div class="card"><div class="h2">Manhattan</div><div class="small">County‑specific filing notes and e‑filing practices.</div></div>
+        <div class="card"><div class="h2">Brooklyn</div><div class="small">Service tips, clerk preferences, and timelines.</div></div>
+        <div class="card"><div class="h2">Queens / Bronx / SI</div><div class="small">Local practices that keep your papers moving.</div></div>
       </div>
-    </div>
-
-    <div id="glossary" class="tab-panel">
-      <div class="columns-2">
-        <div class="kard"><h3>Index Number</h3><p>The court file number purchased to start the case; included in the flat fee.</p></div>
-        <div class="kard"><h3>NYSCEF / EDDS</h3><p>New York’s e‑filing/Document Delivery systems. We e‑file or deliver electronically where allowed.</p></div>
-        <div class="kard"><h3>Affidavit of Service</h3><p>Proof that papers were served the lawful way. We coordinate and file it.</p></div>
-        <div class="kard"><h3>CSSA</h3><p>Child Support Standards Act—the formula New York uses to compute basic support.</p></div>
-        <div class="kard"><h3>Stipulation of Settlement</h3><p>Your written agreement. We draft it in plain English and align it with the Judgment.</p></div>
-        <div class="kard"><h3>Notice of Entry</h3><p>Formal notice that Judgment was entered; starts appeal times and helps with updates.</p></div>
+    </section>
+    <section>
+      <div class="grid" style="grid-template-columns:repeat(3,1fr)">
+        <div class="card"><div class="h2">Glossary</div><div class="small">NYSCEF (e‑filing), EDDS (document delivery), Index Number, Note of Issue, CPLR, DRL—plain‑English definitions, not jargon.</div></div>
+        <div class="card"><div class="h2">Resources</div><div class="small">Links to court pages and forms you can read without legalese.</div></div>
+        <div class="card"><div class="h2">Checklists</div><div class="small">Printable lists so you know what’s needed and when.</div></div>
       </div>
-    </div>
-
-    <div id="resources" class="tab-panel">
-      <div class="columns-2">
-        <div class="kard"><h3>Official portals</h3><p>NY Unified Court System • NYSCEF • EDDS • Child Support Program • Safe horizon. We compile direct links for clients after onboarding.</p></div>
-        <div class="kard"><h3>Plain‑English guides</h3><p>You’ll receive step‑by‑step checklists and sample signature pages tailored to your case.</p></div>
-      </div>
-    </div>
-
-    <div id="checklists" class="tab-panel">
-      <div class="columns-2">
-        <div class="kard"><h3>Client prep</h3><p>Government ID, marriage certificate, addresses, and a clean list of property/debts. We give a printable set at intake.</p></div>
-        <div class="kard"><h3>After Judgment</h3><p>Update SSA/DMV, banks, beneficiaries, and accounts; download and archive your certified judgment.</p></div>
-      </div>
-    </div>
-
-  </section>
+    </section>
+  </div>
 </main>
+<script src="/assets/script.js"></script>
 
-<footer>
+<footer class="footer">
   <div class="container">
-    <p><strong>New York City Divorce Attorney</strong> | serving Manhattan, Brooklyn, Staten Island, and Queens.</p>
-    <p><small>ATTORNEY ADVERTISING • Please do not include any confidential or sensitive information in a contact form, text message, or voicemail. The contact form sends information by non‑encrypted email, which is not secure. Submitting a contact form, sending a text message, making a phone call, or leaving a voicemail does not create an attorney‑client relationship.</small></p>
-    <p>© 2025 NYC Uncontested Divorce Law, PLLC.</p>
+    <div>New York City Divorce Attorney | serving Manhattan, Brooklyn, Staten Island, and Queens.</div>
+    <div style="margin-top:10px;font-size:14px;max-width:900px">
+      ATTORNEY ADVERTISING • Please do not include any confidential or sensitive information in a contact form, text message, or voicemail.
+      The contact form sends information by non‑encrypted email, which is not secure. Submitting a contact form, sending a text message,
+      making a phone call, or leaving a voicemail does not create an attorney‑client relationship.
+    </div>
+    <div style="margin-top:10px;font-size:14px">© 2025 NYC Uncontested Divorce Law, PLLC.</div>
   </div>
 </footer>
 
-</body>
-</html>
+</body></html>
